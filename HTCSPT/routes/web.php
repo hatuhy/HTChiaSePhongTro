@@ -11,6 +11,15 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('index',function(){
+    return view('Viewer.Page.trangchu');
+});
+Route::get('trangchu',function(){
+    return view('Viewer.Layout.index');
+});
+Route::get('dsblog',function(){
+    return view('Viewer.Page.dsblog');
+});
+Route::get('lienhe',function(){
+    return view('Viewer.Page.lienhe');
 });
