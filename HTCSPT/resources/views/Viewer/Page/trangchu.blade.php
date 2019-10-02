@@ -6,31 +6,34 @@
    
 @section('content')
     <section class="home-slider owl-carousel">
-      <div class="slider-item" style="background-image:url(assets/asset/images/bg_1.jpg);">
+      
+      <div class="slider-item" style="background-image:url(assets/asset/images/nha2.jpg);">
       	<div class="overlay"></div>
         <div class="container">
           <div class="row no-gutters slider-text align-items-md-end align-items-center justify-content-end">
           <div class="col-md-6 text p-4 ftco-animate">
-            <h1 class="mb-3">Florida 5, Pinecrest, FL</h1>
-            <span class="location d-block mb-3"><i class="icon-my_location"></i> Melbourne, Vic 3004</span>
-            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-            <span class="price">$28,000</span>
-            <a href="#" class="btn-custom p-3 px-4 bg-primary">View Details <span class="icon-plus ml-1"></span></a>
+            <h1 class="mb-3">CHO THUÊ PHÒNG GIÁ RẺ KHU MỄ TRÌ THƯỢNG</h1>
+            <span class="location d-block mb-3"><i class="icon-my_location"></i> Mễ Trì Thượng, Mễ Trì, Từ Liêm, Hà Nội, Việt Nam</span>
+            <p>❌❌❌CHO THUÊ PHÒNG full nội thất CỰC ĐẸP, CỰC RẺ (điều hoà, nóng lạnh, tủ, giường) KHU VỰC MỄ TRÌ THƯỢNG 🏡Địa chỉ: ngõ 230/21/15 Mễ Trì Thượng 👉Giờ giấc tự do, VS khép kín, riêng chủ, có gác xép... 👉Điện 3.5k/số; nước 28k/m3; mạng 100k/ph; vệ sinh 30k/người 📞Lh:.</p>
+            <span class="price">Giá: 3.1-3.3tr</span>
+            <a href="chitiet" class="btn-custom p-3 px-4 bg-primary">Xem chi tiết <span class="icon-plus ml-1"></span></a>
           </div>
         </div>
         </div>
       </div>
+  
 
-      <div class="slider-item" style="background-image:url(assets/asset/images/bg_2.jpg);">
+
+      <div class="slider-item" style="background-image:url(assets/asset/images/nha2.jpg);">
       	<div class="overlay"></div>
         <div class="container">
           <div class="row no-gutters slider-text align-items-md-end align-items-center justify-content-end">
           <div class="col-md-6 text p-4 ftco-animate">
-            <h1 class="mb-3">3015 Grand Avenue, CocoWalk</h1>
-            <span class="location d-block mb-3"><i class="icon-my_location"></i> Melbourne, Vic 3004</span>
-            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-            <span class="price">$28,000</span>
-            <a href="#" class="btn-custom p-3 px-4 bg-primary">View Details <span class="icon-plus ml-1"></span></a>
+            <h1 class="mb-3">Phòng trọ khép kín phúc la</h1>
+            <span class="location d-block mb-3"><i class="icon-my_location"></i> 19 Yên Bình, Yên Phúc, Hà Đông, Hà Nội, Việt Nam</span>
+            <p>Nhà mình hiện có phòng khép kín tại tầng 3, diện tích 27 m2 trong khu nhà chung cư mini của gia đình cần cho thuê. Phòng mới xây nên rộng rãi, thoáng mát, sạch sẽ, có cầu thang máy, chỗ phơi đồ, để xe, camera an ninh, trang bị sẵn bình nóng lạnh và quạt trần. Điện, Nước có công tơ riêng. 📞Lh: </p>
+            <span class="price">Giá: 2triệu500 ngàn/Tháng</span>
+            <a href="chitiet" class="btn-custom p-3 px-4 bg-primary">Xem chi tiết <span class="icon-plus ml-1"></span></a>
           </div>
         </div>
         </div>
@@ -41,191 +44,50 @@
     	<div class="container">
 	    	<div class="row">
 					<div class="col-md-12 search-wrap">
-						<h2 class="heading h5 d-flex align-items-center pr-4"><span class="ion-ios-search mr-3"></span> Search Property</h2>
+						<h2 class="heading h5 d-flex align-items-center pr-4"><span class="ion-ios-search mr-3"></span> Tìm kiếm </h2>
 						<form action="#" class="search-property">
 	        		<div class="row">
 	        			<div class="col-md align-items-end">
 	        				<div class="form-group">
-	        					<label for="#">Keyword</label>
+	        					<label for="#">Từ khóa</label>
 	          				<div class="form-field">
 	          					<div class="icon"><span class="icon-pencil"></span></div>
-			                <input type="text" class="form-control" placeholder="Keyword">
+			                <input type="text" class="form-control" placeholder="Từ khóa">
 			              </div>
 		              </div>
 	        			</div>
 	        			<div class="col-md align-items-end">
 	        				<div class="form-group">
-	        					<label for="#">Location</label>
+	        					<label for="#">Vị trí</label>
 	          				<div class="form-field">
 	          					<div class="icon"><span class="icon-pencil"></span></div>
-			                <input type="text" class="form-control" placeholder="City/Locality Name">
+			                <input type="text" class="form-control" placeholder="Tên thành phố/ Địa phương">
 			              </div>
 		              </div>
 	        			</div>
 	        			<div class="col-md align-items-end">
 	        				<div class="form-group">
-	        					<label for="#">Property Type</label>
+	        					<label for="#">Loại phòng</label>
 	        					<div class="form-field">
 	          					<div class="select-wrap">
 	                      <div class="icon"><span class="ion-ios-arrow-down"></span></div>
 	                      <select name="" id="" class="form-control">
-	                      	<option value="">Type</option>
-	                        <option value="">Commercial</option>
-	                        <option value="">- Office</option>
-	                        <option value="">Residential</option>
-	                        <option value="">Villa</option>
-	                        <option value="">Condominium</option>
-	                        <option value="">Apartment</option>
+	                      	<option value="">Loại phòng</option>
+	                        <option value="">Phòng khép kín</option>
+	                        <option value="">Phòng không khép kín</option>
+	                        <option value="">Phòng đơn</option>
+	                        <option value="">Phòng đôi</option>
+	                        <option value="">Căn hộ, chung cư</option>
 	                      </select>
 	                    </div>
 			              </div>
 		              </div>
 	        			</div>
-	        			<div class="col-md align-items-end">
-	        				<div class="form-group">
-	        					<label for="#">Property Status</label>
-	        					<div class="form-field">
-	          					<div class="select-wrap">
-	                      <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-	                      <select name="" id="" class="form-control">
-	                      	<option value="">Type</option>
-	                        <option value="">Rent</option>
-	                        <option value="">Sale</option>
-	                      </select>
-	                    </div>
-			              </div>
-		              </div>
-	        			</div>
-	        			<div class="col-md align-items-end">
-	        				<div class="form-group">
-	        					<label for="#">Agents</label>
-	        					<div class="form-field">
-	          					<div class="select-wrap">
-	                      <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-	                      <select name="" id="" class="form-control">
-	                      	<option value="">Any</option>
-	                        <option value="">Jonh Doe</option>
-	                        <option value="">Doe Mags</option>
-	                        <option value="">Kenny Scott</option>
-	                        <option value="">Emily Storm</option>
-	                      </select>
-	                    </div>
-			              </div>
-		              </div>
-	        			</div>
-	        		</div>
-
-	        		<div class="row">
-	        			<div class="col-md align-items-end">
-	        				<div class="form-group">
-	        					<label for="#">Min Beds</label>
-	        					<div class="form-field">
-	          					<div class="select-wrap">
-	                      <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-	                      <select name="" id="" class="form-control">
-	                      	<option value="">1</option>
-	                        <option value="">2</option>
-	                        <option value="">3</option>
-	                        <option value="">4</option>
-	                        <option value="">5</option>
-	                      </select>
-	                    </div>
-			              </div>
-		              </div>
-	        			</div>
-	        			<div class="col-md align-items-end">
-	        				<div class="form-group">
-	        					<label for="#">Min Bathroom</label>
-	        					<div class="form-field">
-	          					<div class="select-wrap">
-	                      <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-	                      <select name="" id="" class="form-control">
-	                      	<option value="">1</option>
-	                        <option value="">2</option>
-	                        <option value="">3</option>
-	                        <option value="">4</option>
-	                        <option value="">5</option>
-	                      </select>
-	                    </div>
-			              </div>
-		              </div>
-	        			</div>
-	        			<div class="col-md align-items-end">
-	        				<div class="form-group">
-	        					<label for="#">Min Price</label>
-	        					<div class="form-field">
-	          					<div class="select-wrap">
-	                      <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-	                      <select name="" id="" class="form-control">
-	                      	<option value="">Min Price</option>
-	                        <option value="">$1,000</option>
-	                        <option value="">$5,000</option>
-	                        <option value="">$10,000</option>
-	                        <option value="">$50,000</option>
-	                        <option value="">$100,000</option>
-	                        <option value="">$200,000</option>
-	                        <option value="">$300,000</option>
-	                        <option value="">$400,000</option>
-	                        <option value="">$500,000</option>
-	                        <option value="">$600,000</option>
-	                        <option value="">$700,000</option>
-	                        <option value="">$800,000</option>
-	                        <option value="">$900,000</option>
-	                        <option value="">$1,000,000</option>
-	                      </select>
-	                    </div>
-			              </div>
-		              </div>
-	        			</div>
-	        			<div class="col-md align-items-end">
-	        				<div class="form-group">
-	        					<label for="#">Min Price</label>
-	        					<div class="form-field">
-	          					<div class="select-wrap">
-	                      <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-	                      <select name="" id="" class="form-control">
-	                      	<option value="">Min Price</option>
-	                        <option value="">$5,000</option>
-	                        <option value="">$10,000</option>
-	                        <option value="">$50,000</option>
-	                        <option value="">$100,000</option>
-	                        <option value="">$200,000</option>
-	                        <option value="">$300,000</option>
-	                        <option value="">$400,000</option>
-	                        <option value="">$500,000</option>
-	                        <option value="">$600,000</option>
-	                        <option value="">$700,000</option>
-	                        <option value="">$800,000</option>
-	                        <option value="">$900,000</option>
-	                        <option value="">$1,000,000</option>
-	                        <option value="">$2,000,000</option>
-	                      </select>
-	                    </div>
-			              </div>
-		              </div>
-	        			</div>
-	        			<div class="col-md align-items-end">
-	        				<div class="form-group">
-	        					<label for="#">Min Area <span>(sq ft)</span></label>
-	          				<div class="form-field">
-	          					<div class="icon"><span class="icon-pencil"></span></div>
-			                <input type="text" class="form-control" placeholder="Min Area">
-			              </div>
-		              </div>
-	        			</div>
-	        			<div class="col-md align-items-end">
-	        				<div class="form-group">
-	        					<label for="#">Max Area <span>(sq ft)</span></label>
-	          				<div class="form-field">
-	          					<div class="icon"><span class="icon-pencil"></span></div>
-			                <input type="text" class="form-control" placeholder="Max Area">
-			              </div>
-		              </div>
-	        			</div>
+	        			
 	        			<div class="col-md align-self-end">
 	        				<div class="form-group">
 	        					<div class="form-field">
-			                <input type="submit" value="Search" class="form-control btn btn-primary">
+			                <input type="submit" value="Tìm kiếm" class="form-control btn btn-primary">
 			              </div>
 		              </div>
 	        			</div>
@@ -235,57 +97,13 @@
 	    	</div>
 	    </div>
     </section>
-
-
-    <section class="ftco-section bg-light">
-      <div class="container">
-        <div class="row d-flex">
-          <div class="col-md-3 d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services py-4 d-block text-center">
-              <div class="d-flex justify-content-center"><div class="icon"><span class="flaticon-pin"></span></div></div>
-              <div class="media-body p-2 mt-2">
-                <h3 class="heading mb-3">Find Places Anywhere In The World</h3>
-                <p>A small river named Duden flows by their place and supplies.</p>
-              </div>
-            </div>      
-          </div>
-          <div class="col-md-3 d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services py-4 d-block text-center">
-              <div class="d-flex justify-content-center"><div class="icon"><span class="flaticon-detective"></span></div></div>
-              <div class="media-body p-2 mt-2">
-                <h3 class="heading mb-3">We Have Agents With Experience</h3>
-                <p>A small river named Duden flows by their place and supplies.</p>
-              </div>
-            </div>    
-          </div>
-          <div class="col-md-3 d-flex align-sel Searchf-stretch ftco-animate">
-            <div class="media block-6 services py-4 d-block text-center">
-              <div class="d-flex justify-content-center"><div class="icon"><span class="flaticon-house"></span></div></div>
-              <div class="media-body p-2 mt-2">
-                <h3 class="heading mb-3">Buy &amp; Rent Modern Properties</h3>
-                <p>A small river named Duden flows by their place and supplies.</p>
-              </div>
-            </div>      
-          </div>
-          <div class="col-md-3 d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services py-4 d-block text-center">
-              <div class="d-flex justify-content-center"><div class="icon"><span class="flaticon-purse"></span></div></div>
-              <div class="media-body p-2 mt-2">
-                <h3 class="heading mb-3">Making Money</h3>
-                <p>A small river named Duden flows by their place and supplies.</p>
-              </div>
-            </div>      
-          </div>
-        </div>
-      </div>
-    </section>
     
     <section class="ftco-section ftco-properties">
     	<div class="container">
     		<div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section text-center ftco-animate">
-          	<span class="subheading">Recent Posts</span>
-            <h2 class="mb-4">Recent Properties</h2>
+          	<span class="subheading">Bài viết gần đây</span>
+            <h2 class="mb-4">Danh sách phòng trọ</h2>
           </div>
         </div>
     		<div class="row">
@@ -293,20 +111,19 @@
     				<div class="properties-slider owl-carousel ftco-animate">
     					<div class="item">
 		    				<div class="properties">
-		    					<a href="#" class="img d-flex justify-content-center align-items-center" style="background-image: url(assets/asset/images/properties-1.jpg);">
+		    					<a href="chitiet" class="img d-flex justify-content-center align-items-center" style="background-image: url(assets/asset/images/tro1.jpg);">
 		    						<div class="icon d-flex justify-content-center align-items-center">
 		    							<span class="icon-search2"></span>
 		    						</div>
 		    					</a>
 		    					<div class="text p-3">
-		    						<span class="status sale">Sale</span>
 		    						<div class="d-flex">
 		    							<div class="one">
-				    						<h3><a href="#">North Parchmore Street</a></h3>
-				    						<p>Apartment</p>
+				    						<h3><a href="#">Cho thuê phòng ngõ 139 nguyễn ngọc vũ, cầu giấy</a></h3>
+				    						<p>🏡: Ngõ 139 Nguyễn Ngọc Vũ, Trung Hoà, Cầu Giấy, Hà Nội, Vietnam</p>
 			    						</div>
 			    						<div class="two">
-			    							<span class="price">$20,000</span>
+			    							<span class="price">2tr7<small>/ tháng</small></span>
 		    							</div>
 		    						</div>
 		    					</div>
@@ -314,20 +131,19 @@
 	    				</div>
 	    				<div class="item">
 		    				<div class="properties">
-		    					<a href="#" class="img d-flex justify-content-center align-items-center" style="background-image: url(assets/asset/images/properties-2.jpg);">
+		    					<a href="chitiet" class="img d-flex justify-content-center align-items-center" style="background-image: url(assets/asset/images/tro2.jpg);">
 		    						<div class="icon d-flex justify-content-center align-items-center">
 		    							<span class="icon-search2"></span>
 		    						</div>
 		    					</a>
 		    					<div class="text p-3">
 		    						<div class="d-flex">
-		    							<span class="status rent">Rent</span>
 		    							<div class="one">
-				    						<h3><a href="#">North Parchmore Street</a></h3>
-				    						<p>Apartment</p>
+				    						<h3><a href="#">Cho thuê nhà riêng gần trung tâm hội nghị quốc gia</a></h3>
+				    						<p>🏡: Cương Kiên, Nam Từ Liêm, Hà Nộit</p>
 			    						</div>
 			    						<div class="two">
-			    							<span class="price">$2,000 <small>/ month</small></span>
+			    							<span class="price">5tr5 <small>/ tháng</small></span>
 		    							</div>
 		    						</div>
 		    					</div>
@@ -335,20 +151,19 @@
 	    				</div>
 	    				<div class="item">
 		    				<div class="properties">
-		    					<a href="#" class="img d-flex justify-content-center align-items-center" style="background-image: url(assets/asset/images/properties-3.jpg);">
+		    					<a href="chitiet" class="img d-flex justify-content-center align-items-center" style="background-image: url(assets/asset/images/tro3.jpg);">
 		    						<div class="icon d-flex justify-content-center align-items-center">
 		    							<span class="icon-search2"></span>
 		    						</div>
 		    					</a>
 		    					<div class="text p-3">
-		    						<span class="status sale">Sale</span>
 		    						<div class="d-flex">
 		    							<div class="one">
-				    						<h3><a href="#">North Parchmore Street</a></h3>
-				    						<p>Apartment</p>
+				    						<h3><a href="#">Cho thuê homestay phòng nữ 3 người</a></h3>
+				    						<p>Ngõ 509 Vũ Tông Phan, Khương Đình, Thanh Xuân, Hà Nội, Việt Nam</p>
 			    						</div>
 			    						<div class="two">
-			    							<span class="price">$20,000</span>
+			    							<span class="price">1tr7 <small>/ tháng</small></span>
 		    							</div>
 		    						</div>
 		    					</div>
@@ -356,20 +171,19 @@
 	    				</div>
 	    				<div class="item">
 		    				<div class="properties">
-		    					<a href="#" class="img d-flex justify-content-center align-items-center" style="background-image: url(assets/asset/images/properties-4.jpg);">
+		    					<a href="chitiet" class="img d-flex justify-content-center align-items-center" style="background-image: url(assets/asset/images/tro4.jpg);">
 		    						<div class="icon d-flex justify-content-center align-items-center">
 		    							<span class="icon-search2"></span>
 		    						</div>
 		    					</a>
 		    					<div class="text p-3">
-		    						<span class="status sale">Sale</span>
 		    						<div class="d-flex">
 		    							<div class="one">
-				    						<h3><a href="#">North Parchmore Street</a></h3>
-				    						<p>Apartment</p>
+				    						<h3><a href="#">Nhà liền kề kđt xuân phương tasco - Xuân Phương</a></h3>
+				    						<p>N06, Dịch Vọng, Cầu Giấy, Hà Nội, Việt Nam</p>
 			    						</div>
 			    						<div class="two">
-			    							<span class="price">$20,000</span>
+			    							<span class="price">7 triệu <small>/ tháng</small></span>
 		    							</div>
 		    						</div>
 		    					</div>
@@ -377,20 +191,20 @@
 	    				</div>
 	    				<div class="item">
 		    				<div class="properties">
-		    					<a href="#" class="img d-flex justify-content-center align-items-center" style="background-image: url(assets/asset/images/properties-5.jpg);">
+		    					<a href="chitiet" class="img d-flex justify-content-center align-items-center" style="background-image: url(assets/asset/images/tro5.jpg);">
 		    						<div class="icon d-flex justify-content-center align-items-center">
 		    							<span class="icon-search2"></span>
 		    						</div>
 		    					</a>
 		    					<div class="text p-3">
-		    						<span class="status rent">Rent</span>
+		    						
 		    						<div class="d-flex">
 		    							<div class="one">
-				    						<h3><a href="#">North Parchmore Street</a></h3>
-				    						<p>Apartment</p>
+				    						<h3><a href="#">Cho thuê nhà nguyên căn giá rẻ ( Có thương lượng)</a></h3>
+				    						<p>Xuân Đỉnh, Bắc Từ Liêm, Hà Nội, Việt Nam</p>
 			    						</div>
 			    						<div class="two">
-			    							<span class="price">$900 <small>/ month</small></span>
+			    							<span class="price">10 triệu <small>/ tháng</small></span>
 		    							</div>
 		    						</div>
 		    					</div>
@@ -398,20 +212,20 @@
 	    				</div>
 	    				<div class="item">
 		    				<div class="properties">
-		    					<a href="#" class="img d-flex justify-content-center align-items-center" style="background-image: url(assets/asset/images/properties-6.jpg);">
+		    					<a href="chitiet" class="img d-flex justify-content-center align-items-center" style="background-image: url(assets/asset/images/tro6.jpg);">
 		    						<div class="icon d-flex justify-content-center align-items-center">
 		    							<span class="icon-search2"></span>
 		    						</div>
 		    					</a>
 		    					<div class="text p-3">
-		    						<span class="status sale">Sale</span>
+		    						
 		    						<div class="d-flex">
 		    							<div class="one">
-				    						<h3><a href="#">North Parchmore Street</a></h3>
-				    						<p>Apartment</p>
+				    						<h3><a href="#">Chính chủ cho thuê phòng CHO NỮ</a></h3>
+				    						<p>n Dương Quảng Hàm, Quan Hoa, Cầu Giấy, Hà Nội, Việt Nam</p>
 			    						</div>
 			    						<div class="two">
-			    							<span class="price">$20,000</span>
+			    							<span class="price">3 triệu <small>/ tháng</small></span>
 		    							</div>
 		    						</div>
 		    					</div>
@@ -427,8 +241,8 @@
     	<div class="container">
 				<div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section text-center ftco-animate">
-          	<span class="subheading">Special Offers</span>
-            <h2 class="mb-4">Most Recommended Properties</h2>
+          	<span class="subheading">Đề xuất cho bạn</span>
+            <h2 class="mb-4">Danh sách phòng trọ</h2>
           </div>
         </div>    		
     	</div>
@@ -436,7 +250,7 @@
     		<div class="row">
     			<div class="col-sm col-md-6 col-lg ftco-animate">
     				<div class="properties">
-    					<a href="#" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(assets/asset/images/properties-1.jpg);">
+    					<a href="chitiet" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(assets/asset/images/properties-1.jpg);">
     						<div class="icon d-flex justify-content-center align-items-center">
     							<span class="icon-search2"></span>
     						</div>
@@ -464,7 +278,7 @@
     			</div>
     			<div class="col-sm col-md-6 col-lg ftco-animate">
     				<div class="properties">
-    					<a href="#" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(assets/asset/images/properties-2.jpg);">
+    					<a href="chitiet" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(assets/asset/images/properties-2.jpg);">
     						<div class="icon d-flex justify-content-center align-items-center">
     							<span class="icon-search2"></span>
     						</div>
@@ -492,7 +306,7 @@
     			</div>
     			<div class="col-sm col-md-6 col-lg ftco-animate">
     				<div class="properties">
-    					<a href="#" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(assets/asset/images/properties-3.jpg);">
+    					<a href="chitiet" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(assets/asset/images/properties-3.jpg);">
     						<div class="icon d-flex justify-content-center align-items-center">
     							<span class="icon-search2"></span>
     						</div>
@@ -520,7 +334,7 @@
     			</div>
     			<div class="col-sm col-md-6 col-lg ftco-animate">
     				<div class="properties">
-    					<a href="#" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(assets/asset/images/properties-4.jpg);">
+    					<a href="chitiet" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(assets/asset/images/properties-4.jpg);">
     						<div class="icon d-flex justify-content-center align-items-center">
     							<span class="icon-search2"></span>
     						</div>
@@ -550,158 +364,26 @@
     	</div>
     </section>
 
-    <section class="ftco-section ftco-counter img" id="section-counter" style="background-image: url(assets/asset/images/bg_1.jpg);">
-    	<div class="container">
-    		<div class="row justify-content-center mb-3 pb-3">
-          <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
-            <h2 class="mb-4">Some fun facts</h2>
-          </div>
-        </div>
-    		<div class="row justify-content-center">
-    			<div class="col-md-10">
-		    		<div class="row">
-		          <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
-		            <div class="block-18 text-center">
-		              <div class="text">
-		                <strong class="number" data-number="9000">0</strong>
-		                <span>Happy Customers</span>
-		              </div>
-		            </div>
-		          </div>
-		          <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
-		            <div class="block-18 text-center">
-		              <div class="text">
-		                <strong class="number" data-number="10000">0</strong>
-		                <span>Properties</span>
-		              </div>
-		            </div>
-		          </div>
-		          <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
-		            <div class="block-18 text-center">
-		              <div class="text">
-		                <strong class="number" data-number="1000">0</strong>
-		                <span>Agents</span>
-		              </div>
-		            </div>
-		          </div>
-		          <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
-		            <div class="block-18 text-center">
-		              <div class="text">
-		                <strong class="number" data-number="100">0</strong>
-		                <span>Awards</span>
-		              </div>
-		            </div>
-		          </div>
-		        </div>
-	        </div>
-        </div>
-    	</div>
-    </section>
-
-
-    <section class="ftco-section testimony-section bg-light">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-8 ftco-animate">
-          	<div class="row ftco-animate">
-		          <div class="col-md-12">
-		            <div class="carousel-testimony owl-carousel ftco-owl">
-		              <div class="item">
-		                <div class="testimony-wrap py-4 pb-5">
-		                  <div class="user-img mb-4" style="background-image: url(assets/asset/images/person_1.jpg)">
-		                    <span class="quote d-flex align-items-center justify-content-center">
-		                      <i class="icon-quote-left"></i>
-		                    </span>
-		                  </div>
-		                  <div class="text text-center">
-		                    <p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-		                    <p class="name">Roger Scott</p>
-		                    <span class="position">Clients</span>
-		                  </div>
-		                </div>
-		              </div>
-		              <div class="item">
-		                <div class="testimony-wrap py-4 pb-5">
-		                  <div class="user-img mb-4" style="background-image: url(assets/asset/images/person_2.jpg)">
-		                    <span class="quote d-flex align-items-center justify-content-center">
-		                      <i class="icon-quote-left"></i>
-		                    </span>
-		                  </div>
-		                  <div class="text text-center">
-		                    <p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-		                    <p class="name">Roger Scott</p>
-		                    <span class="position">Agent</span>
-		                  </div>
-		                </div>
-		              </div>
-		              <div class="item">
-		                <div class="testimony-wrap py-4 pb-5">
-		                  <div class="user-img mb-4" style="background-image: url(assets/asset/images/person_3.jpg)">
-		                    <span class="quote d-flex align-items-center justify-content-center">
-		                      <i class="icon-quote-left"></i>
-		                    </span>
-		                  </div>
-		                  <div class="text text-center">
-		                    <p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-		                    <p class="name">Roger Scott</p>
-		                    <span class="position">Client</span>
-		                  </div>
-		                </div>
-		              </div>
-		              <div class="item">
-		                <div class="testimony-wrap py-4 pb-5">
-		                  <div class="user-img mb-4" style="background-image: url(assets/asset/images/person_1.jpg)">
-		                    <span class="quote d-flex align-items-center justify-content-center">
-		                      <i class="icon-quote-left"></i>
-		                    </span>
-		                  </div>
-		                  <div class="text text-center">
-		                    <p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-		                    <p class="name">Roger Scott</p>
-		                    <span class="position">Client</span>
-		                  </div>
-		                </div>
-		              </div>
-		              <div class="item">
-		                <div class="testimony-wrap py-4 pb-5">
-		                  <div class="user-img mb-4" style="background-image: url(assets/asset/images/person_1.jpg)">
-		                    <span class="quote d-flex align-items-center justify-content-center">
-		                      <i class="icon-quote-left"></i>
-		                    </span>
-		                  </div>
-		                  <div class="text text-center">
-		                    <p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-		                    <p class="name">Roger Scott</p>
-		                    <span class="position">Client</span>
-		                  </div>
-		                </div>
-		              </div>
-		            </div>
-		          </div>
-		        </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  
 
 
     <section class="ftco-section">
       <div class="container">
         <div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section text-center ftco-animate">
-            <span class="subheading">Read Articles</span>
-            <h2>Recent Blog</h2>
+            <span class="subheading">Đọc bài viết</span>
+            <h2>Blog gần đây</h2>
           </div>
         </div>
         <div class="row d-flex">
           <div class="col-md-3 d-flex ftco-animate">
             <div class="blog-entry align-self-stretch">
-              <a href="blog-single.html" class="block-20" style="background-image: url('assets/asset/images/image_1.jpg');">
+              <a href="blog-single.html" class="block-20" style="background-image: url('assets/asset/images/1.jpg');">
               </a>
               <div class="text mt-3 d-block">
-                <h3 class="heading mt-3"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+                <h3 class="heading mt-3"><a href="#">Nên ở ký túc xá hay phòng trọ?</a></h3>
                 <div class="meta mb-3">
-                  <div><a href="#">Dec 6, 2018</a></div>
+                  <div><a href="#">1/10/2019</a></div>
                   <div><a href="#">Admin</a></div>
                   <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
                 </div>
@@ -710,12 +392,12 @@
           </div>
           <div class="col-md-3 d-flex ftco-animate">
             <div class="blog-entry align-self-stretch">
-              <a href="blog-single.html" class="block-20" style="background-image: url('assets/asset/images/image_2.jpg');">
+              <a href="blog-single.html" class="block-20" style="background-image: url('assets/asset/images/2.jpg');">
               </a>
               <div class="text mt-3">
-                <h3 class="heading mt-3"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+                <h3 class="heading mt-3"><a href="#">Những lợi ích và rủ ro khi thuê nhà qua môi giới</a></h3>
                 <div class="meta mb-3">
-                  <div><a href="#">Dec 6, 2018</a></div>
+                  <div><a href="#">1/10/2019</a></div>
                   <div><a href="#">Admin</a></div>
                   <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
                 </div>
@@ -724,12 +406,12 @@
           </div>
           <div class="col-md-3 d-flex ftco-animate">
             <div class="blog-entry align-self-stretch">
-              <a href="blog-single.html" class="block-20" style="background-image: url('assets/asset/images/image_3.jpg');">
+              <a href="blog-single.html" class="block-20" style="background-image: url('assets/asset/images/3.jpg');">
               </a>
               <div class="text mt-3">
-                <h3 class="heading mt-3"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+                <h3 class="heading mt-3"><a href="#">Thuê phòng trọ giá rẻ, tốt cần lưu ý những gì</a></h3>
                 <div class="meta mb-3">
-                  <div><a href="#">Dec 6, 2018</a></div>
+                  <div><a href="#">1/10/2019</a></div>
                   <div><a href="#">Admin</a></div>
                   <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
                 </div>
@@ -738,12 +420,12 @@
           </div>
           <div class="col-md-3 d-flex ftco-animate">
             <div class="blog-entry align-self-stretch">
-              <a href="blog-single.html" class="block-20" style="background-image: url('assets/asset/images/image_4.jpg');">
+              <a href="blog-single.html" class="block-20" style="background-image: url('assets/asset/images/4.jpg');">
               </a>
               <div class="text mt-3">
-                <h3 class="heading mt-3"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+                <h3 class="heading mt-3"><a href="#">Cảnh giác Chiêu trò Lừa đảo của Chủ trọ</a></h3>
                 <div class="meta mb-3">
-                  <div><a href="#">Dec 6, 2018</a></div>
+                  <div><a href="#">1/10/2019</a></div>
                   <div><a href="#">Admin</a></div>
                   <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
                 </div>
@@ -759,14 +441,14 @@
         <div class="container">
           <div class="row d-flex justify-content-center">
             <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
-              <h2>Subcribe to our Newsletter</h2>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
+              <h2>Đăng ký để nhận tin của chúng tôi</h2>
+              <p>CSPT, Uy tín - tiện lợi - đơn giản</p>
               <div class="row d-flex justify-content-center mt-5">
                 <div class="col-md-8">
                   <form action="#" class="subscribe-form">
                     <div class="form-group d-flex">
-                      <input type="text" class="form-control" placeholder="Enter email address">
-                      <input type="submit" value="Subscribe" class="submit px-3">
+                      <input type="text" class="form-control" placeholder="Nhập email">
+                      <input type="submit" value="Đăng ký" class="submit px-3">
                     </div>
                   </form>
                 </div>
