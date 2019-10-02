@@ -23,10 +23,11 @@ Route::get('dsblog',function(){
 Route::get('lienhe',function(){
     return view('Viewer.Page.lienhe');
 });
-<<<<<<< HEAD
-Route::get('admin1',function(){
-    return view('Admin.index');
-=======
+
+Route::get('admin',function(){
+    return view('Admin.Page.index');
+});
+
 Route::get('abouts',function(){
     return view('Viewer.Page.about');
 });
@@ -36,7 +37,11 @@ Route::get('danhsach',function(){
 Route::get('chitiet',function(){
     return view('Viewer.Page.chitiet');
 });
-Route::get('dangki',function(){
-    return view('Viewer.Page.dangki');
->>>>>>> 7a473f4a807f7a194ed2cb41721a47d87facc23a
+ Route::get('danhmuc',function(){
+     return view('Admin.Page.danhmuc');
+});
+Route::group(['prefix'=>'admin'],function(){
+    Route::group(['prefix'=>'danhmuc'],function(){
+        Route::get('danhsach','danhmuc_controller@getDanhSach');
+    });
 });
