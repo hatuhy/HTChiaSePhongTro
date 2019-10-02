@@ -23,3 +23,6 @@ Route::get('dsblog',function(){
 Route::get('lienhe',function(){
     return view('Viewer.Page.lienhe');
 });
+Route::get('admin1',function(){
+    return view('Admin.index');
+});
