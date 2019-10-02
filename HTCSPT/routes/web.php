@@ -23,3 +23,15 @@ Route::get('dsblog',function(){
 Route::get('lienhe',function(){
     return view('Viewer.Page.lienhe');
 });
+Route::get('abouts',function(){
+    return view('Viewer.Page.about');
+});
+Route::get('danhsach',function(){
+    return view('Viewer.Page.danhsach');
+});
+Route::get('chitiet',function(){
+    return view('Viewer.Page.chitiet');
+});
+Route::get('dangki',function(){
+    return view('Viewer.Page.dangki');
+});

@@ -1,16 +1,16 @@
 @extends('Viewer.Layout.index')
 @section('title')
-<title>Blogs</title>
+<title>Liên hệ</title>
 @endsection
 
 @section('content')
-    <div class="hero-wrap" style="background-image: url('images/bg_1.jpg');">
+    <div class="hero-wrap" style="background-image: url('assets/asset/images/bg_1.jpg');">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">
           <div class="col-md-9 ftco-animate text-center">
-            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>Contact</span></p>
-            <h1 class="mb-3 bread">Contact Us</h1>
+            <p class="breadcrumbs"><span class="mr-2"><a href="index">Trang chủ</a></span> <span>Liên hệ</span></p>
+            <h1 class="mb-3 bread">Liên hệ chúng tôi</h1>
           </div>
         </div>
       </div>
@@ -20,22 +20,22 @@
       <div class="container">
         <div class="row d-flex mb-5 contact-info">
           <div class="col-md-12 mb-4">
-            <h2 class="h3">Contact Information</h2>
+            <h2 class="h3">Thông tin liên hệ</h2>
           </div>
           <div class="w-100"></div>
           <div class="col-md-3 d-flex">
           	<div class="info bg-white p-4">
-	            <p><span>Address:</span> 198 West 21th Street, Suite 721 New York NY 10016</p>
+	            <p><span>Địa chỉ:</span> Minh khai - Bắc Từ Liêm - Hà Nội</p>
 	          </div>
           </div>
           <div class="col-md-3 d-flex">
           	<div class="info bg-white p-4">
-	            <p><span>Phone:</span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
+	            <p><span>Điện thoại:</span> <a href="tel://1234567920">0382544996</a></p>
 	          </div>
           </div>
           <div class="col-md-3 d-flex">
           	<div class="info bg-white p-4">
-	            <p><span>Email:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+	            <p><span>Email:</span> <a href="mailto:info@yoursite.com">dungpt2805@gmail.com</a></p>
 	          </div>
           </div>
           <div class="col-md-3 d-flex">
@@ -48,19 +48,19 @@
           <div class="col-md-6 order-md-last d-flex">
             <form action="#" class="bg-white p-5 contact-form">
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Name">
+                <input type="text" class="form-control" placeholder="Tên của bạn">
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Email">
+                <input type="text" class="form-control" placeholder="Email của bạn">
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Subject">
+                <input type="text" class="form-control" placeholder="Chủ đề">
               </div>
               <div class="form-group">
-                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Mô tả"></textarea>
               </div>
               <div class="form-group">
-                <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+                <input type="submit" value="Gửi" class="btn btn-primary py-3 px-5">
               </div>
             </form>
           
@@ -73,19 +73,20 @@
       </div>
     </section>
 		
-		<section class="ftco-section-parallax">
+		
+    <section class="ftco-section-parallax">
       <div class="parallax-img d-flex align-items-center">
         <div class="container">
           <div class="row d-flex justify-content-center">
             <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
-              <h2>Subcribe to our Newsletter</h2>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
+              <h2>Đăng ký để nhận tin của chúng tôi</h2>
+              <p>CSPT, Uy tín - tiện lợi - đơn giản</p>
               <div class="row d-flex justify-content-center mt-5">
                 <div class="col-md-8">
                   <form action="#" class="subscribe-form">
                     <div class="form-group d-flex">
-                      <input type="text" class="form-control" placeholder="Enter email address">
-                      <input type="submit" value="Subscribe" class="submit px-3">
+                      <input type="text" class="form-control" placeholder="Nhập email">
+                      <input type="submit" value="Đăng ký" class="submit px-3">
                     </div>
                   </form>
                 </div>

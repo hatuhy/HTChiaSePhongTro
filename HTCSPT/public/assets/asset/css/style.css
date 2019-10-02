@@ -9387,3 +9387,71 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+
+
+.content-agile2{
+  margin: 0 auto;
+  width: 33%;
+  padding: 25px 0 0;   
+  background-color: #202123; 
+}
+.content-agile2 input#firstname, input#email, input#password1, input#password2{
+      width: 300px;
+    height: 50px;
+    padding: 0 15px;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 200;
+    background-color: transparent;
+    border-bottom: 5px solid #fff;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    font-family: 'Raleway', sans-serif;
+    margin: 0 auto 20px;
+    display: block;
+    outline: none;
+}
+.content-agile2 .register {
+    width: 335px;
+    margin: 30px auto;
+    display: block;
+    height: 50px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: normal;
+    color: #fff;
+    background-color: #3970b0;
+    border-color: transparent;
+    font-family: 'Raleway', sans-serif;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+.content-agile2 .wthree {
+    font-size: 16px;
+    font-weight: normal;
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+    padding-bottom: 20px;
+}
+ul.social-agileinfo {
+    text-align: center;
+}
+ul.social-agileinfo li {
+    display: inline-block;
+    margin: 0;
+}
+ul.social-agileinfo li a i.fa {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fff;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+}
