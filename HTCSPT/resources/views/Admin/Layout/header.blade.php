@@ -13,7 +13,7 @@
         </div>
         <div class="container-fluid d-flex align-items-center justify-content-between">
           <div class="navbar-header">
-            <!-- Navbar Header--><a href="index.html" class="navbar-brand">
+            <!-- Navbar Header--><a href="admin" class="navbar-brand">
               <div class="brand-text brand-big visible text-uppercase"><strong class="text-primary">Home </strong><strong> Share</strong></div>
               <div class="brand-text brand-sm"><strong class="text-primary">H</strong><strong>S</strong></div></a>
             <!-- Sidebar Toggle Btn-->
@@ -131,13 +131,13 @@
             </div> -->
             <!-- Megamenu end     -->
             <!-- Languages dropdown    -->
-            <div class="list-inline-item dropdown"><a id="languages" rel="nofollow" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link language dropdown-toggle"><img src="assets_admin/asset/img/flags/16/GB.png" alt="English"><span class="d-none d-sm-inline-block">English</span></a>
+            <!-- <div class="list-inline-item dropdown"><a id="languages" rel="nofollow" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link language dropdown-toggle"><img src="assets_admin/asset/img/flags/16/GB.png" alt="English"><span class="d-none d-sm-inline-block">English</span></a>
               <div aria-labelledby="languages" class="dropdown-menu">
                 <a rel="nofollow" href="#" class="dropdown-item"> <img src="assets_admin/asset/img/flags/16/VN.png" alt="English" class="mr-2"><span>Vietnamese  </span></a></div>
-            </div>
+            </div> -->
             <!-- Log out               -->
             <div class="list-inline-item logout">                  
-               <a id="logout" href="login.html" class="nav-link"> <span class="d-none d-sm-inline">Đăng xuất </span><i class="icon-logout"></i></a></div>
+               <a id="logout" href="#" class="nav-link"> <span class="d-none d-sm-inline">Đăng xuất </span><i class="icon-logout"></i></a></div>
           </div>
         </div>
       </nav>
@@ -147,44 +147,35 @@
       <nav id="sidebar">
         <!-- Sidebar Header-->
         <div class="sidebar-header d-flex align-items-center">
-          <div class="avatar"><img src="assets_admin/asset/img/avatar-6.jpg" alt="..." class="img-fluid rounded-circle"></div>
+          <div class="avatar">
+          <a href="#"><img src="assets_admin/asset/img/avatar-6.jpg" alt="..." class="img-fluid rounded-circle"></a>
+          </div>
           <div class="title">
-            <h1 class="h5">Tú HV</h1>
+            <h1 class="h5" >
+            <a href="#">Hà Tú</a>
+            </h1>
             <p>Administrator</p>
           </div>
         </div>
-        <!-- Sidebar Navidation Menus--><span class="heading">Quản lí</span>
+        <!-- Sidebar Navidation Menus-->
         <ul class="list-unstyled">
-        <li><a href="#exampledropdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-windows"></i>Thống Kê</a>
-        <ul id="exampledropdownDropdown" class="collapse list-unstyled ">
-              <li><a href="../distribution/Loai SP.html">Thống kê người dùng    </a></li>
-              <li><a href="../distribution/SanPham.html">Thống kê báo lỗi</a></li>
-            </ul> 
-        <li><a href="../distribution/Danh muc.html"> <i class="icon-grid"></i>Danh mục </a></li>
-          <li><a href="#exampledropdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-windows"></i>Sản phẩm</a>
+        <li><a href="admin"> <i class="icon-windows"></i>Thống Kê </a></li>
+       
+          <li><a href="#exampledropdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-grid"></i>Danh Sách</a>
             <ul id="exampledropdownDropdown" class="collapse list-unstyled ">
-              <li><a href="../distribution/Loai SP.html">Loại sản phẩm</a></li>
-              <li><a href="../distribution/SanPham.html">Sản phẩm</a></li>
+              <li><a href="admin/danhmuc/danhsach">Danh Mục</a></li>
+              <li><a href="admin/nguoidung/danhsach">Thành Viên</a></li>
+              <li><a href="admin/phongtro/danhsach">Phòng Trọ</a></li>
             </ul> 
           </li>
-          <li><a href="../distribution/HoaDon.html"> <i class="icon-padnote"></i>Hóa đơn</a></li>
-          <li><a href="../distribution/KhuyenMai.html"><i class="fa fa-gift" aria-hidden="true"></i>Khuyến mãi</a></li>
-          <li><a href="#exampledropdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="fa fa-user-o" aria-hidden="true"></i>Khách hàng</a>
+          <li><a href="#exampledropdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-grid"></i>Báo Cáo</a>
             <ul id="exampledropdownDropdown" class="collapse list-unstyled ">
-              <li><a href="../distribution/NhomKhachHang.html">Nhóm khách hàng</a></li>
-              <li><a href="../distribution/KhachHang.html">Khách hàng</a></li>
+              <li><a href="admin/danhmuc/danhsach">Bài Đăng</a></li>
+              <li><a href="../distribution/SanPham.html">Tài Khoản</a></li>
+              
             </ul> 
           </li>
-          <li><a href="../distribution/BanDo.html"> <i class="fa fa-map-marker" aria-hidden="true"></i>Bản đồ </a></li>
-        </ul>
-        <span class="heading">Thống kê</span>
-        <ul class="list-unstyled">
-          <li> <a href="../distribution/HangHoa.html"> <i class="fa fa-shopping-cart" aria-hidden="true"></i>Hàng hóa </a></li>
-          <li> <a href="../distribution/DoanhThu.html"><i class="fa fa-calculator" aria-hidden="true"></i>Doanh thu </a></li> 
-        </ul>
-        <span class="heading">Hệ thống</span>
-        <ul class="list-unstyled">
-            <li> <a href="../distribution/ThanhVien.html"> <i class="fa fa-user-circle" aria-hidden="true"></i>Tài khoản</a></li>
-            <li> <a href="../distribution/Quyền truy cập.html"> <i class="fa fa-key" aria-hidden="true"></i>Quyền truy cập</a></li> 
-          </ul>
+          <li><a href="index"> <i class="icon-windows"></i>Về Trang Chủ</a></li>
+         
+        
       </nav>

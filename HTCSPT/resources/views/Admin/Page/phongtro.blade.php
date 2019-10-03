@@ -1,6 +1,6 @@
 @extends('Admin.Layout.index')
 @section('title')
-<title>Danh Mục</title>
+<title>Danh Sách Phòng Trọ</title>
 @endsection
 
     @section('content')
@@ -11,9 +11,9 @@
             <!-- Page Header-->
             <div class="page-header no-margin-bottom">
               <div class="container-fluid">
-                <h2 class="h5 no-margin-bottom">
-                <a href="admin" > Home / </a>
-                <a href="admin/danhmuc/danhsach">Danh Sách Các Danh mục</a>
+              <h2 class="h5 no-margin-bottom">
+                <a href="admin">  Home / </a>
+                <a href="admin/nguoidung/danhsach">Danh Sách Phòng Trọ</a>
                 </h2>
               </div>
             </div>
@@ -29,27 +29,33 @@
                 <div class="row">
                   <div class="col">
                     <div class="block margin-bottom-sm">
-                      <div class="title"><strong>Danh sách danh mục</strong></div>
+                      <div class="title"><strong>Danh sách Phòng Trọ</strong></div>
                       <a class="btn btn-info" data-toggle="modal" data-target="#">Thêm mới</a>
                       <div class="table-responsive"> 
                         <table class="table">
                           <thead>
                             <tr>
                               <th>#</th>
-                              <th>Mã danh mục</th>
-                              <th>Tên danh mục</th>
+                              <th>ID</th>
+                              <th>Tiêu Đề</th>
+                              <th>Danh Mục</th>
+                              <th>Giá Phòng </th>
+                              <th>Trạng Thái</th>
                               <th>Action</th>
                               <th></th>
                             </tr>
                           </thead>
                           <tbody>
 
-                              @foreach($danhmucs as $dm)
+                              @foreach($dspts as $pt)
                               <tr>
                               
-                              <td>{{$dm->id}}</td>
-                              <td>{{$dm->id}}</td>
-                              <td>{{$dm->name}}</td>
+                              <td>{{$pt->id}}</td>
+                              <td>{{$pt->id}}</td>
+                              <td>{{$pt->title}}</td>
+                              <td>{{$pt->category_id}}</td>
+                              <td>{{$pt->price}} </td>
+                              <td>{{$pt->approve}}</td>
                               <td><button class="btn btn-success categoryButton Sua">Action</button></td>
                               </tr>
                               @endforeach

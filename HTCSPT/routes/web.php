@@ -40,8 +40,20 @@ Route::get('chitiet',function(){
  Route::get('danhmuc',function(){
      return view('Admin.Page.danhmuc');
 });
+Route::get('nguoidung',function(){
+    return view('Admin.Page.nguoidung');
+});
+Route::get('phongtro',function(){
+    return view('Admin.Page.phongtro');
+});
 Route::group(['prefix'=>'admin'],function(){
     Route::group(['prefix'=>'danhmuc'],function(){
         Route::get('danhsach','danhmuc_controller@getDanhSach');
     });
+    Route::group(['prefix'=>'nguoidung'],function(){
+        Route::get('danhsach','nguoidung_controller@getDanhSach');
+    }); 
+    Route::group(['prefix'=>'phongtro'],function(){
+        Route::get('danhsach','phongtro_controller@getDanhSach');
+    }); 
 });
