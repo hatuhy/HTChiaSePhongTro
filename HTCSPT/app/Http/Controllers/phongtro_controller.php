@@ -4,12 +4,51 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\motelrooms;
+use App\districts;
+use App\categories;
 class phongtro_controller extends Controller
 {
     //
-    public function getDanhSach(){
-        $dspt = motelrooms::all();
-        return view('Admin.Page.phongtro',['dspts'=>$dspt]);
-        
+    public function getDanhSachDKD(){
+        $dspt = motelrooms::where('approve',1) ->get();
+        return view('Admin.Page.room.phongtro',['dspts'=>$dspt]);  
+    }
+    public function getDanhSachCKD(){
+        $dsptckd = motelrooms::where('approve',0) ->get();
+        return view('Admin.Page.room.list_room_uncheck',['dsptckds'=>$dsptckd]);
+    }
+
+    public function postKiemDuyet(Request $request,$id){
+        $ptckd = motelrooms::find($id);
+        $ptckd->approve = 1;
+        $ptckd->save();
+        return redirect()->back();
+    }
+    public function xoaBaiDang($id){
+        $post = motelrooms::find($id);
+        $post->delete();
+        return redirect('admin/phongtro/danhsach')->with('thongbao','Xóa Thành Công');;
+    }
+    public function getDangTin(){
+        $loaiphongs = categories::all();
+         $list_district = districts::all();
+        return view('Viewer.Page.dangtin',['list_district'=>$list_district,'loaiphongs'=>$loaiphongs]);
+
+    }
+    public function postDangTin(Request $request){
+
+       $room = new motelrooms;
+       $room->title = $request->TieuDe;
+       $room->category_id = $request->KieuNha;
+       $room->description = $request->MieuTa;
+       $room->price = $request->Gia;
+       $room->area = $request->DienTich;
+
+       $room->images= $request->file('Anh')->getClientOriginalName();
+       $room->phone = $request->SDT;
+       $room->district_id=$request->Quan;
+       $room->address= $request->DiaChi;
+       $room->save();
+       return redirect('dangtin/')->with('thongbao','Đăng Thành Công');
     }
 }

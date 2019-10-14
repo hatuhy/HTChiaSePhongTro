@@ -12,6 +12,8 @@
     <!-- Bootstrap CSS-->
     <link rel="stylesheet" href="assets_admin/asset/vendor/bootstrap/css/bootstrap.min.css">
     <!-- Font Awesome CSS-->
+     <!-- Custom CSS -->
+     <link href="assets_admin/asset/css/sb-admin-2.css" rel="stylesheet">
     <link rel="stylesheet" href="assets_admin/asset/vendor/font-awesome/css/font-awesome.min.css">
     <!-- Custom Font Icons CSS-->
     <link rel="stylesheet" href="assets_admin/asset/css/font.css">
@@ -22,6 +24,11 @@
     <!-- Custom stylesheet - for your changes-->
     <link rel="stylesheet" href="assets_admin/asset/css/custom.css">
     <!-- Favicon-->
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" href="assets_admin/asset/vendor/bootstrap/css/dataTables.bootstrap.css" rel="stylesheet">
+
+    <!-- DataTables Responsive CSS -->
+    <link href="assets_admin/asset/css/dataTables.responsive.css" rel="stylesheet">
     <link rel="shortcut icon" href="assets_admin/asset/img/favicon.ico">
     <!-- Tweaks for older IEs--><!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -44,5 +51,6 @@
     <script src="assets_admin/asset/vendor/jquery-validation/jquery.validate.min.js"></script>
     <script src="assets_admin/asset/js/charts-home.js"></script>
     <script src="assets_admin/asset/js/front.js"></script>
+    <script src="assets_admin/asset/js/script.js"></script>
   </body>
 </html>
