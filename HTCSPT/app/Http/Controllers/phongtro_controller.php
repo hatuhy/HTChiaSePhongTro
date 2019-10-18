@@ -51,4 +51,19 @@ class phongtro_controller extends Controller
        $room->save();
        return redirect('dangtin/')->with('thongbao','Đăng Thành Công');
     }
+    public function getIndex(Request $request){
+        $phongtro = motelrooms::where('id','<',6) ->get();
+        $districts = districts::all();
+        $loaiphongs = categories::all();
+        return view('Viewer.Page.trangchu',['list_district'=>$districts,'loaiphongs'=>$loaiphongs,'phongtros'=>$phongtro]);
+
+    }
+    public function timkiem(Request $request){
+    	$phongtros = motelrooms::where('title','like','%'.$request->tieude.'%')->where('district_id',$request->vitri)->where('category_id',$request->loaiphong)->get();
+    	$list_district = districts::all();
+        // dd($list_district);
+    	$loaiphongs = categories::all();
+    	return view('Viewer.Page.timkiem',['phongtros'=>$phongtros,'list_district'=>$list_district,'loaiphongs'=>$loaiphongs]);
+
+    }
 }

@@ -76,11 +76,13 @@
                               </td> 
                                 @endif
                               @endif  
-                              <td><button class="btn btn-success categoryButton Sua"><a href="admin/nguoidung/change_user/{{$nd->id}}">Sửa</a></button></td>
+                              <td>
+                                <button class="btn btn-success categoryButton sua"><a href="admin/nguoidung/change_user/{{$nd->id}}">
+                                <i class="far fa-edit"></i>
+                              </a></button>
+                              </td>
                               </tr>
-                              @endforeach
-                              
-                        
+                              @endforeach   
                           </tbody>
                         </table>
                       </div>
@@ -90,4 +92,5 @@
                 </div>
               </div>
             </section>
+            </div>
       @endsection

@@ -10,13 +10,8 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('index','phongtro_controller@getIndex');
 
-Route::get('index',function(){
-    return view('Viewer.Page.trangchu');
-});
-Route::get('trangchu',function(){
-    return view('Viewer.Layout.index');
-});
 
 Route::get('dangtin','phongtro_controller@getDangTin');
 Route::post('dangtin','phongtro_controller@postDangTin');
@@ -41,12 +36,17 @@ Route::get('danhsach',function(){
 Route::get('chitiet',function(){
     return view('Viewer.Page.chitiet');
 });
+Route::get('quanlytin',function(){
+    return view('Viewer.Page.quanlytin');
+});
  Route::get('danhmuc',function(){
      return view('Admin.Page.category.danhmuc');
 });
 Route::get('nguoidung',function(){
     return view('Admin.Page.user.nguoidung');
 });
+Route::get('timkiem','phongtro_controller@timkiem')->name('tim-kiem');
+
 
 
 Route::group(['prefix'=>'admin'],function(){

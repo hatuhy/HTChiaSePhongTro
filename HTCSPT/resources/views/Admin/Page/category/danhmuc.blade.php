@@ -48,16 +48,13 @@
                           <tbody>
                               @foreach($danhmucs as $dm)
                               <tr>
-                              <td>{{$dm->id}}</td>
-                              <td>{{$dm->id}}</td>
-                              <td>{{$dm->name}}</td>
-                              <td><button class="btn btn-success categoryButton Sua"><a href="admin/danhmuc/suadanhmuc/{{$dm->id}}">Sửa</a></button>
+                                <td>{{$dm->id}}</td>
+                                <td>{{$dm->id}}</td>
+                                <td>{{$dm->name}}</td>
+                                <td><button class="btn btn-success categoryButton Sua"><a href="admin/danhmuc/suadanhmuc/{{$dm->id}}">Sửa</a></button>
                                
-                                  <button class="btn btn-success categoryButton Xoa"><a href="admin/danhmuc/xoa/{{$dm->id}}">Xóa</a>  </button>
-                               
-                                  
-                              </td>
-                              
+                                    <button class="btn btn-success categoryButton Xoa"><a href="admin/danhmuc/xoa/{{$dm->id}}">Xóa</a>  </button> 
+                                </td>
                               </tr>
                               @endforeach
                           </tbody>

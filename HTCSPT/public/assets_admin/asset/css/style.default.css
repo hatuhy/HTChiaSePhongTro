@@ -3510,3 +3510,6 @@ pre code {
 .header{
   transition-duration: 700ms;
 }
+.table-responsive {
+  overflow-x:unset;
+}

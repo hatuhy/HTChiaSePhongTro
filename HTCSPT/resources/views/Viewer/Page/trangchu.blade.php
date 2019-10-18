@@ -5,9 +5,9 @@
     @endsection
    
 @section('content')
-    <section class="home-slider owl-carousel">
+    <!--<section class="home-slider owl-carousel">
       
-      <div class="slider-item" style="background-image:url(assets/asset/images/nha2.jpg);">
+      <div class="slider-item" style="background-image:url(assets/asset/images/nha1.jpg);">
       	<div class="overlay"></div>
         <div class="container">
           <div class="row no-gutters slider-text align-items-md-end align-items-center justify-content-end">
@@ -38,51 +38,67 @@
         </div>
         </div>
       </div>
-    </section>
+    </section>-->
+     <div class="hero-wrap" style="background-image: url('assets/asset/images/bg_1.jpg');">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-center justify-content-center">
+          <div class="col-md-9 ftco-animate text-center">
+            <p class="breadcrumbs"><span class="mr-2"><a href="index">Trang chủ</a></span> 
+          </div>
+        </div>
+      </div>
+    </div>
 
     <section class="ftco-search">
     	<div class="container">
 	    	<div class="row">
 					<div class="col-md-12 search-wrap">
 						<h2 class="heading h5 d-flex align-items-center pr-4"><span class="ion-ios-search mr-3"></span> Tìm kiếm </h2>
-						<form action="#" class="search-property">
+						<form action="{{route('tim-kiem')}}" method="get" class="search-property">
 	        		<div class="row">
 	        			<div class="col-md align-items-end">
 	        				<div class="form-group">
-	        					<label for="#">Từ khóa</label>
+	        					<label for="#">Tiêu đề</label>
 	          				<div class="form-field">
 	          					<div class="icon"><span class="icon-pencil"></span></div>
-			                <input type="text" class="form-control" placeholder="Từ khóa">
+			                <input type="text" class="form-control" placeholder="Tiêu đề" name="tieude">
 			              </div>
 		              </div>
 	        			</div>
+
 	        			<div class="col-md align-items-end">
-	        				<div class="form-group">
-	        					<label for="#">Vị trí</label>
-	          				<div class="form-field">
-	          					<div class="icon"><span class="icon-pencil"></span></div>
-			                <input type="text" class="form-control" placeholder="Tên thành phố/ Địa phương">
-			              </div>
-		              </div>
-	        			</div>
-	        			<div class="col-md align-items-end">
-	        				<div class="form-group">
-	        					<label for="#">Loại phòng</label>
-	        					<div class="form-field">
-	          					<div class="select-wrap">
-	                      <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-	                      <select name="" id="" class="form-control">
-	                      	<option value="">Loại phòng</option>
-	                        <option value="">Phòng khép kín</option>
-	                        <option value="">Phòng không khép kín</option>
-	                        <option value="">Phòng đơn</option>
-	                        <option value="">Phòng đôi</option>
-	                        <option value="">Căn hộ, chung cư</option>
-	                      </select>
-	                    </div>
-			              </div>
-		              </div>
-	        			</div>
+                  <div class="form-group">
+                    <label for="#">Vị trí</label>
+                    <div class="form-field">
+                      <div class="select-wrap">
+                        <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+                        <select name="vitri" id="" class="form-control">
+                          @foreach($list_district as $quan)
+                          <option value="{{$quan->id}}">{{$quan->name}}</option>
+                          @endforeach
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md align-items-end">
+                  <div class="form-group">
+                    <label for="#">Loại phòng</label>
+                    <div class="form-field">
+                      <div class="select-wrap">
+                        <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+                        <select name="loaiphong" id="" class="form-control">
+                          @foreach($loaiphongs as $loaiphong)
+                          <option value="{{$loaiphong->id}}">{{$loaiphong->name}}</option>
+                          @endforeach
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
 	        			
 	        			<div class="col-md align-self-end">
 	        				<div class="form-group">
@@ -98,144 +114,45 @@
 	    </div>
     </section>
     
+    
     <section class="ftco-section ftco-properties">
     	<div class="container">
     		<div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-          	<span class="subheading">Bài viết gần đây</span>
-            <h2 class="mb-4">Danh sách phòng trọ</h2>
-          </div>
-        </div>
+         		 <div class="col-md-7 heading-section text-center ftco-animate">
+          			<span class="subheading">Bài viết gần đây</span>
+           				 <h2 class="mb-4">Danh sách phòng trọ</h2>
+        	     </div>
+            </div>
     		<div class="row">
     			<div class="col-md-12">
     				<div class="properties-slider owl-carousel ftco-animate">
-    					<div class="item">
-		    				<div class="properties">
-		    					<a href="chitiet" class="img d-flex justify-content-center align-items-center" style="background-image: url(assets/asset/images/tro1.jpg);">
-		    						<div class="icon d-flex justify-content-center align-items-center">
-		    							<span class="icon-search2"></span>
-		    						</div>
-		    					</a>
-		    					<div class="text p-3">
-		    						<div class="d-flex">
-		    							<div class="one">
-				    						<h3><a href="#">Cho thuê phòng ngõ 139 nguyễn ngọc vũ, cầu giấy</a></h3>
-				    						<p>🏡: Ngõ 139 Nguyễn Ngọc Vũ, Trung Hoà, Cầu Giấy, Hà Nội, Vietnam</p>
-			    						</div>
-			    						<div class="two">
-			    							<span class="price">2tr7<small>/ tháng</small></span>
-		    							</div>
-		    						</div>
-		    					</div>
-		    				</div>
-	    				</div>
-	    				<div class="item">
-		    				<div class="properties">
-		    					<a href="chitiet" class="img d-flex justify-content-center align-items-center" style="background-image: url(assets/asset/images/tro2.jpg);">
-		    						<div class="icon d-flex justify-content-center align-items-center">
-		    							<span class="icon-search2"></span>
-		    						</div>
-		    					</a>
-		    					<div class="text p-3">
-		    						<div class="d-flex">
-		    							<div class="one">
-				    						<h3><a href="#">Cho thuê nhà riêng gần trung tâm hội nghị quốc gia</a></h3>
-				    						<p>🏡: Cương Kiên, Nam Từ Liêm, Hà Nộit</p>
-			    						</div>
-			    						<div class="two">
-			    							<span class="price">5tr5 <small>/ tháng</small></span>
-		    							</div>
-		    						</div>
-		    					</div>
-		    				</div>
-	    				</div>
-	    				<div class="item">
-		    				<div class="properties">
-		    					<a href="chitiet" class="img d-flex justify-content-center align-items-center" style="background-image: url(assets/asset/images/tro3.jpg);">
-		    						<div class="icon d-flex justify-content-center align-items-center">
-		    							<span class="icon-search2"></span>
-		    						</div>
-		    					</a>
-		    					<div class="text p-3">
-		    						<div class="d-flex">
-		    							<div class="one">
-				    						<h3><a href="#">Cho thuê homestay phòng nữ 3 người</a></h3>
-				    						<p>Ngõ 509 Vũ Tông Phan, Khương Đình, Thanh Xuân, Hà Nội, Việt Nam</p>
-			    						</div>
-			    						<div class="two">
-			    							<span class="price">1tr7 <small>/ tháng</small></span>
-		    							</div>
-		    						</div>
-		    					</div>
-		    				</div>
-	    				</div>
-	    				<div class="item">
-		    				<div class="properties">
-		    					<a href="chitiet" class="img d-flex justify-content-center align-items-center" style="background-image: url(assets/asset/images/tro4.jpg);">
-		    						<div class="icon d-flex justify-content-center align-items-center">
-		    							<span class="icon-search2"></span>
-		    						</div>
-		    					</a>
-		    					<div class="text p-3">
-		    						<div class="d-flex">
-		    							<div class="one">
-				    						<h3><a href="#">Nhà liền kề kđt xuân phương tasco - Xuân Phương</a></h3>
-				    						<p>N06, Dịch Vọng, Cầu Giấy, Hà Nội, Việt Nam</p>
-			    						</div>
-			    						<div class="two">
-			    							<span class="price">7 triệu <small>/ tháng</small></span>
-		    							</div>
-		    						</div>
-		    					</div>
-		    				</div>
-	    				</div>
-	    				<div class="item">
-		    				<div class="properties">
-		    					<a href="chitiet" class="img d-flex justify-content-center align-items-center" style="background-image: url(assets/asset/images/tro5.jpg);">
-		    						<div class="icon d-flex justify-content-center align-items-center">
-		    							<span class="icon-search2"></span>
-		    						</div>
-		    					</a>
-		    					<div class="text p-3">
-		    						
-		    						<div class="d-flex">
-		    							<div class="one">
-				    						<h3><a href="#">Cho thuê nhà nguyên căn giá rẻ ( Có thương lượng)</a></h3>
-				    						<p>Xuân Đỉnh, Bắc Từ Liêm, Hà Nội, Việt Nam</p>
-			    						</div>
-			    						<div class="two">
-			    							<span class="price">10 triệu <small>/ tháng</small></span>
-		    							</div>
-		    						</div>
-		    					</div>
-		    				</div>
-	    				</div>
-	    				<div class="item">
-		    				<div class="properties">
-		    					<a href="chitiet" class="img d-flex justify-content-center align-items-center" style="background-image: url(assets/asset/images/tro6.jpg);">
-		    						<div class="icon d-flex justify-content-center align-items-center">
-		    							<span class="icon-search2"></span>
-		    						</div>
-		    					</a>
-		    					<div class="text p-3">
-		    						
-		    						<div class="d-flex">
-		    							<div class="one">
-				    						<h3><a href="#">Chính chủ cho thuê phòng CHO NỮ</a></h3>
-				    						<p>n Dương Quảng Hàm, Quan Hoa, Cầu Giấy, Hà Nội, Việt Nam</p>
-			    						</div>
-			    						<div class="two">
-			    							<span class="price">3 triệu <small>/ tháng</small></span>
-		    							</div>
-		    						</div>
-		    					</div>
-		    				</div>
-	    				</div>
-    				</div>
+						@foreach($phongtros as $phongtro)
+						 <div class="item">
+  		    				<div class="properties">
+  		    					<a href="chitiet" class="img d-flex justify-content-center align-items-center" style="background-image: url(assets/asset/images/tro4.jpg);">
+  		    						<div class="icon d-flex justify-content-center align-items-center">
+  		    							<span class="icon-search2"></span>
+  		    						</div>
+  		    					</a>
+  		    					<div class="text p-3">
+  		    						<div class="d-flex">
+  		    							<div class="one">
+  				    						<h3><a href="chitiet">{{$phongtro->title}}</a></h3>
+  				    						<p> {{$phongtro->districts->name}}	</p>
+  			    						</div>
+  			    						<div class="two">
+  			    							<span class="price">{{number_format($phongtro->price)}} VND/th<small></small></span>
+  		    							</div>
+  		    						</div>
+  		    					</div>
+  		    				</div>
+						  </div>
+						@endforeach 
+					</div>	
     			</div>
     		</div>
-    	</div>
-    </section>
+   		 </div>
+	</section>
 
     <section class="ftco-section bg-light">
     	<div class="container">
@@ -256,24 +173,17 @@
     						</div>
     					</a>
     					<div class="text p-3">
-    						<span class="status sale">Sale</span>
-    						<div class="d-flex">
-    							<div class="one">
-		    						<h3><a href="#">North Parchmore Street</a></h3>
-		    						<p>Apartment</p>
-	    						</div>
-	    						<div class="two">
-	    							<span class="price">$20,000</span>
-    							</div>
-    						</div>
-    						<p>Far far away, behind the word mountains, far from the countries</p>
-    						<hr>
-    						<p class="bottom-area d-flex">
-    							<span><i class="flaticon-selection"></i> 250sqft</span>
-    							<span class="ml-auto"><i class="flaticon-bathtub"></i> 3</span>
-    							<span><i class="flaticon-bed"></i> 4</span>
-    						</p>
-    					</div>
+                            <div class="d-flex">
+                                    <h6><a href="chitiet">Còn Một phòng duy nhất tại 1197 Giải Phóng</a></h6>
+                                    
+                            </div>
+                            <p> Ngõ 1197 đường Giải Phóng, Quận Hoàng Mai, Hà Nội</p>
+                            <hr>
+                            <p class="bottom-area d-flex">
+                                <span><i class="flaticon-selection"></i> 26-30m2</span>
+                                <span class="ml-auto">2tr/th</span>
+                            </p>
+                        </div>
     				</div>
     			</div>
     			<div class="col-sm col-md-6 col-lg ftco-animate">
@@ -284,24 +194,17 @@
     						</div>
     					</a>
     					<div class="text p-3">
-    						<span class="status sale">Sale</span>
-    						<div class="d-flex">
-    							<div class="one">
-		    						<h3><a href="#">North Parchmore Street</a></h3>
-		    						<p>Apartment</p>
-	    						</div>
-	    						<div class="two">
-	    							<span class="price">$20,000</span>
-    							</div>
-    						</div>
-    						<p>Far far away, behind the word mountains, far from the countries</p>
-    						<hr>
-    						<p class="bottom-area d-flex">
-    							<span><i class="flaticon-selection"></i> 250sqft</span>
-    							<span class="ml-auto"><i class="flaticon-bathtub"></i> 3</span>
-    							<span><i class="flaticon-bed"></i> 4</span>
-    						</p>
-    					</div>
+                            <div class="d-flex">
+                                    <h6><a href="chitiet">Còn Một phòng duy nhất tại 1197 Giải Phóng</a></h6>
+                                    
+                            </div>
+                            <p> Ngõ 1197 đường Giải Phóng, Quận Hoàng Mai, Hà Nội</p>
+                            <hr>
+                            <p class="bottom-area d-flex">
+                                <span><i class="flaticon-selection"></i> 26-30m2</span>
+                                <span class="ml-auto">2tr/th</span>
+                            </p>
+                        </div>
     				</div>
     			</div>
     			<div class="col-sm col-md-6 col-lg ftco-animate">
@@ -312,24 +215,17 @@
     						</div>
     					</a>
     					<div class="text p-3">
-    						<span class="status rent">Rent</span>
-    						<div class="d-flex">
-    							<div class="one">
-		    						<h3><a href="#">North Parchmore Street</a></h3>
-		    						<p>Apartment</p>
-	    						</div>
-	    						<div class="two">
-	    							<span class="price">$800 <small>/ month</small></span>
-    							</div>
-    						</div>
-    						<p>Far far away, behind the word mountains, far from the countries</p>
-    						<hr>
-    						<p class="bottom-area d-flex">
-    							<span><i class="flaticon-selection"></i> 250sqft</span>
-    							<span class="ml-auto"><i class="flaticon-bathtub"></i> 3</span>
-    							<span><i class="flaticon-bed"></i> 4</span>
-    						</p>
-    					</div>
+                            <div class="d-flex">
+                                    <h6><a href="chitiet">Còn Một phòng duy nhất tại 1197 Giải Phóng</a></h6>
+                                    
+                            </div>
+                            <p> Ngõ 1197 đường Giải Phóng, Quận Hoàng Mai, Hà Nội</p>
+                            <hr>
+                            <p class="bottom-area d-flex">
+                                <span><i class="flaticon-selection"></i> 26-30m2</span>
+                                <span class="ml-auto">2tr/th</span>
+                            </p>
+                        </div>
     				</div>
     			</div>
     			<div class="col-sm col-md-6 col-lg ftco-animate">
@@ -340,24 +236,17 @@
     						</div>
     					</a>
     					<div class="text p-3">
-    						<span class="status sale">Sale</span>
-    						<div class="d-flex">
-    							<div class="one">
-		    						<h3><a href="#">North Parchmore Street</a></h3>
-		    						<p>Apartment</p>
-	    						</div>
-	    						<div class="two">
-	    							<span class="price">$20,000</span>
-    							</div>
-    						</div>
-    						<p>Far far away, behind the word mountains, far from the countries</p>
-    						<hr>
-    						<p class="bottom-area d-flex">
-    							<span><i class="flaticon-selection"></i> 250sqft</span>
-    							<span class="ml-auto"><i class="flaticon-bathtub"></i> 3</span>
-    							<span><i class="flaticon-bed"></i> 4</span>
-    						</p>
-    					</div>
+                            <div class="d-flex">
+                                    <h6><a href="chitiet">Còn Một phòng duy nhất tại 1197 Giải Phóng</a></h6>
+                                    
+                            </div>
+                            <p> Ngõ 1197 đường Giải Phóng, Quận Hoàng Mai, Hà Nội</p>
+                            <hr>
+                            <p class="bottom-area d-flex">
+                                <span><i class="flaticon-selection"></i> 26-30m2</span>
+                                <span class="ml-auto">2tr/th</span>
+                            </p>
+                        </div>
     				</div>
     			</div>
     		</div>
