@@ -43,7 +43,6 @@ class phongtro_controller extends Controller
        $room->description = $request->MieuTa;
        $room->price = $request->Gia;
        $room->area = $request->DienTich;
-
        $room->images= $request->file('Anh')->getClientOriginalName();
        $room->phone = $request->SDT;
        $room->district_id=$request->Quan;
@@ -61,9 +60,12 @@ class phongtro_controller extends Controller
     public function timkiem(Request $request){
     	$phongtros = motelrooms::where('title','like','%'.$request->tieude.'%')->where('district_id',$request->vitri)->where('category_id',$request->loaiphong)->get();
     	$list_district = districts::all();
-        // dd($list_district);
     	$loaiphongs = categories::all();
     	return view('Viewer.Page.timkiem',['phongtros'=>$phongtros,'list_district'=>$list_district,'loaiphongs'=>$loaiphongs]);
-
     }
+    public function getDanhSachChiTiet(){
+        $dspt = motelrooms::where('approve',1) ->get();
+        return view('Admin.Page.room.room',['dspts'=>$dspt]);  
+    }
+    
 }

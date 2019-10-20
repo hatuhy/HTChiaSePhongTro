@@ -45,12 +45,13 @@
                               <th>Tiêu Đề</th>
                               <th>Danh Mục</th>
                               <th>Giá Phòng </th>
+                              <th>Số người xem</th>
+                              <th>Số lần chỉnh sửa</th>
+                              <th>Lần sửa cuối</th>
+                              <th>Đánh giá</th>
                               <th>Trạng Thái</th>
-                              <th>
-                                <a>Action</a>
-                                <a href="#">More</a>
-                              </th>
-                              
+                              <th>Action</th>
+
                             </tr>
                           </thead>
                           <tbody>

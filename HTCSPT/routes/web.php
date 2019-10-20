@@ -66,6 +66,7 @@ Route::group(['prefix'=>'admin'],function(){
     }); 
     Route::group(['prefix'=>'phongtro'],function(){
         Route::get('danhsach','phongtro_controller@getDanhSachDKD');
+        Route::get('danhsachchitiet','phongtro_controller@getDanhSachChiTiet');
         Route::get('xoa/{id}','phongtro_controller@xoaBaiDang')-> name('xoabaidang');
     }); 
     Route::group(['prefix'=>'phongtrochuakiemduyet'],function(){
@@ -75,7 +76,6 @@ Route::group(['prefix'=>'admin'],function(){
     Route::group(['prefix'=>'report'],function(){
         Route::get('post_report','report_controller@getDanhSach');
     });
-    
 });
 
 
