@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\motelrooms;
+use App\users;
 use App\districts;
 use App\categories;
 class phongtro_controller extends Controller

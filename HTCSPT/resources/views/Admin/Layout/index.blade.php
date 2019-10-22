@@ -81,13 +81,15 @@
     @include('Admin.Layout.footer')
       <!-- JavaScript files-->
       <script src="assets_admin/asset/vendor/jquery/jquery.min.js"></script>
-    <script src="assets_admin/asset/vendor/popper.js/umd/popper.min.js"> </script>
+      <script src="assets_admin/asset/vendor/popper.js/umd/popper.min.js"> </script>
     <script src="assets_admin/asset/vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets_admin/asset/vendor/jquery.cookie/jquery.cookie.js"> </script>
-    <script src="assets_admin/asset/vendor/chart.js/Chart.min.js"></script>
+    <!-- <script src="assets_admin/asset/vendor/chart.js/Chart.min.js"></script> -->
     <script src="assets_admin/asset/vendor/jquery-validation/jquery.validate.min.js"></script>
     <script src="assets_admin/asset/js/charts-home.js"></script>
     <script src="assets_admin/asset/js/front.js"></script>
+    <script src="assets_admin/asset/js/dataTables.bootstrap.min.js"></script>
+    <script src="assets_admin/asset/js/jquery.dataTables.js"></script>
     <script src="assets_admin/asset/js/script.js"></script>
   </body>
 </html>

@@ -4,4 +4,6 @@ $(window).scroll(function () {
     // } else {
     //     $('.header').removeClass('fixed-menu');
     // }
+
+    $('#myTable').DataTable();
 });

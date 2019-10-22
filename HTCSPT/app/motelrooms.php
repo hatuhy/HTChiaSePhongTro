@@ -9,7 +9,7 @@ class motelrooms extends Model
     //
     protected $table = 'motelrooms';
     public function users(){
-        return $this->hasOne('App\users');
+        return $this->belongsTo('App\users','user_id','id');
     }
     public function categories(){
         return $this->belongsTo('App\categories','category_id','id');

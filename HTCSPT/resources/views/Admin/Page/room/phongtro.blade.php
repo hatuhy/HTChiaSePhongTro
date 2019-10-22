@@ -40,15 +40,15 @@
                         <table class="table">
                           <thead>
                             <tr>
-                              <th>#</th>
+                              <th><input type="checkbox"/></th>
                               <th>ID</th>
                               <th>Tiêu Đề</th>
                               <th>Danh Mục</th>
                               <th>Giá Phòng </th>
-                              <th>Trạng Thái</th>
-                              <th>
+                              <th style ="width:110px">Trạng Thái</th>
+                              <th style ="width:130px">
                                 <a>Action</a>
-                                <a href="#">More</a>
+                                <a href="admin/phongtro/danhsachchitiet">(More)</a>
                               </th>
                               
                             </tr>
@@ -57,7 +57,8 @@
                               @foreach($dspts as $pt)
                               <tr>
                               
-                              <td>{{$pt->id}}</td>
+                              <td><input type="checkbox"/>
+                              </td> 
                               <td>{{$pt->id}}</td>
                               <td>{{$pt->title}}</td>
                               <td>{{$pt->categories->name}}</td>

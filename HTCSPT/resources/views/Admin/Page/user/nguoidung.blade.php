@@ -32,7 +32,7 @@
                       <div class="title"><strong>Danh sách người dùng</strong></div>
                      <!--  <a class="btn btn-info" data-toggle="modal" data-target="#">Thêm mới</a> -->
                       <div class="table-responsive"> 
-                        <table class="table">
+                        <table class="table" id="myTable">
                           <thead>
                             <tr>
                               <th>#</th>
@@ -88,35 +88,7 @@
                       </div>
                     </div>
 
-                  <!-- Pagination -->
-                  
-                        <div class="col-lg-12">
-                            <ul class="pagination">
-                                <li>
-                                    <a href="#">&laquo;</a>
-                                </li>
-                                <li class="active">
-                                    <a href="#">1</a>
-                                </li>
-                                <li>
-                                    <a href="#">2</a>
-                                </li>
-                                <li>
-                                    <a href="#">3</a>
-                                </li>
-                                <li>
-                                    <a href="#">4</a>
-                                </li>
-                                <li>
-                                    <a href="#">5</a>
-                                </li>
-                                <li>
-                                    <a href="#">&raquo;</a>
-                                </li>
-                            </ul>
-                        </div>
-                   
-                    <!-- /.row -->
+                 
                     
                  
                 </div>

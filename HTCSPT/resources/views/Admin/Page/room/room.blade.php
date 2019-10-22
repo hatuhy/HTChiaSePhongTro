@@ -19,7 +19,7 @@
             </div>
             <!-- Breadcrumb-->
             <div class="container-fluid">
-              <ul class="breadcrumb">
+              <ul class="breadcrumb" style="padding: unset">
                 <li class="breadcrumb-item"><a href="admin"></a></li>
                 <!-- <li class="breadcrumb-item active">Danh mục</li> -->
               </ul>
@@ -37,20 +37,20 @@
                             </div>
                         @endif
                       <div class="table-responsive"> 
-                        <table class="table">
+                        <table class="table" id="myTable">
                           <thead>
                             <tr>
-                              <th>#</th>
-                              <th>ID</th>
-                              <th>Tiêu Đề</th>
-                              <th>Danh Mục</th>
-                              <th>Giá Phòng </th>
-                              <th>Số người xem</th>
-                              <th>Số lần chỉnh sửa</th>
-                              <th>Lần sửa cuối</th>
-                              <th>Đánh giá</th>
-                              <th>Trạng Thái</th>
-                              <th>Action</th>
+                              <th style="width:7%";><input type="checkbox"/></th>
+                              <th style="width:7%">ID</th>
+                              <th style="width:20%">Tiêu Đề</th>
+                              <th style="width:9%">Danh Mục</th>
+                              <th style="width:10%">Giá </th>
+                              <th style="width:8%">Views</th>
+                              <th style="width:11%">Số lần chỉnh sửa</th>
+                              <th style="width:10%">Lần sửa cuối</th>
+                              <th style="width:7%">Đánh giá</th>
+                              <th style="width:7%">Trạng Thái</th>
+                              <th style="width:8%">Action</th>
 
                             </tr>
                           </thead>
@@ -58,19 +58,21 @@
                               @foreach($dspts as $pt)
                               <tr>
                               
-                              <td>{{$pt->id}}</td>
+                              <td><input type="checkbox"/></td>
                               <td>{{$pt->id}}</td>
                               <td>{{$pt->title}}</td>
                               <td>{{$pt->categories->name}}</td>
                               <td>{{number_format($pt->price)}}VND/Th</td>
                               @if($pt->approve==1)
                               <td style="color:green">
-                              Đã kiểm duyệt
+                              <i class="fas fa-check"></i>
                               </td>
                               @endif
                               <td>
                                   <!-- <button class="btn btn-success categoryButton Sua">Bỏ Kiểm duyệt</button> -->
-                                  <button class="btn btn-success categoryButton Sua"><a href="admin/phongtro/xoa/{{$pt  ->id}}">Xóa</a> </button>
+                                  <button class="btn btn-success categoryButton Sua"><a href="admin/phongtro/xoa/{{$pt->id}}">
+                                  <i class="far fa-edit"></i>
+                                </a> </button>
                               </td>
                               </tr>
                               @endforeach

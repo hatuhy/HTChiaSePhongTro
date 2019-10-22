@@ -36,13 +36,13 @@
                         <table class="table">
                           <thead>
                             <tr>
-                              <th>#</th>
+                              <th><input type="checkbox"/></th>
                               <th>ID</th>
                               <th>Tiêu Đề</th>
                               <th>Danh Mục</th>
                               <th>Giá Phòng </th>
-                              <th>Trạng Thái</th>
-                              <th>Action</th>
+                              <th>Người Đăng</th>
+                              <th>Kiểm Duyệt</th>
                               <th></th>
                             </tr>
                           </thead>
@@ -55,16 +55,12 @@
                                 $i+=1;
                               ?>
                               <tr>
-                              <td>{{$i}}</td>
+                              <td><input type="checkbox"/></td>
                               <td>{{$ptckd->id}}</td>
                               <td>{{$ptckd->title}}</td>
                               <td>{{$ptckd->categories->name}}</td>
-                              <td>{{number_format($ptckd->price)}}VND/Th</td>
-                              @if($ptckd->approve==0)
-                              <td style="color:Red">
-                              Chưa kiểm duyệt
-                              </td>
-                              @endif
+                              <td>{{number_format($ptckd->price)}}VND/Th</td>                             
+                              <td>{{$ptckd->users->name}}</td>         
                               <td>
                                   <!-- <button class="btn btn-success categoryButton Sua">Bỏ Kiểm duyệt</button> -->
                             @if(session('thongbao'))
@@ -74,7 +70,7 @@
                         @endif
                         <form action="admin/phongtrochuakiemduyet/kiemduyet/{{$ptckd->id}}" method="get">
                         @CSRF
-                                  <button class="btn btn-success categoryButton Sua"><a href="admin/phongtrochuakiemduyet/kiemduyet/{{$ptckd->id}}">Kiểm Duyệt</a> </button>
+                                  <button class="btn btn-success categoryButton Sua"><a href="admin/phongtrochuakiemduyet/kiemduyet/{{$ptckd->id}}">Accept</a> </button>
                               </form>
                               </td>
                               </tr>
