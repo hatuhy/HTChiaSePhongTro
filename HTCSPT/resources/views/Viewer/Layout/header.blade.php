@@ -12,9 +12,9 @@
 	          <li class="nav-item"><a href="abouts" class="nav-link">About</a></li>
 	          <li class="nav-item"><a href="dsblog" class="nav-link">Blog</a></li>
 	          <li class="nav-item"><a href="lienhe" class="nav-link">Liên hệ</a></li>
-	          <!-- <li class="nav-item cta"><a href="dangki" class="nav-link ml-lg-2"><span class="icon-user"></span> Đăng nhập</a></li>
-	          <li class="nav-item cta cta-colored"><a href="contact.html" class="nav-link"><span class="icon-pencil"></span> Đăng kí</a></li> -->
-			  <div class="list-inline-item dropdown"><a id="navbarDropdownMenuLink1" href="#" data-toggle="dropdown"
+	          <li class="nav-item cta"><a href="dangki" class="nav-link ml-lg-2"><span class="icon-user"></span> Đăng nhập</a></li>
+	          <li class="nav-item cta cta-colored"><a href="contact.html" class="nav-link"><span class="icon-pencil"></span> Đăng kí</a></li>
+			 <!--  <div class="list-inline-item dropdown"><a id="navbarDropdownMenuLink1" href="#" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false" class="nav-link messages-toggle"><i
                             class="icon-email"></i><span class="badge dashbg-1">5</span></a>
                     <div aria-labelledby="navbarDropdownMenuLink1" class="dropdown-menu messages">
@@ -29,7 +29,7 @@
                     
                         <a href="#" class="dropdown-item text-center message"> <strong>See All Messages <i
                                     class="fa fa-angle-right"></i></strong></a></div>
-                </div>
+              </div> -->
 	        </ul>
 	      </div>
 	    </div>
