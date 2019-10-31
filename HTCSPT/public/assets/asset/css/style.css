@@ -7925,7 +7925,7 @@ h1, h2, h3, h4, h5,
       margin-bottom: 30px; } }
   .properties .img {
     display: block;
-    height: 250px; }
+    height: 170px; }
   .properties .icon {
     width: 60px;
     height: 60px;
@@ -9454,4 +9454,11 @@ ul.social-agileinfo li a i.fa {
     text-align: center;
     line-height: 40px;
     color: #fff;
+}
+.time{
+  display: block;
+  float: right;
+  text-align: right;
+  margin-top: 2px;
+  font-size: 12px;
 }

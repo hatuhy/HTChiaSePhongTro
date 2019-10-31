@@ -23,9 +23,7 @@ Route::get('lienhe',function(){
     return view('Viewer.Page.lienhe');
 });
 
-Route::get('admin',function(){
-    return view('Admin.Page.index');
-});
+Route::get('admin','notification_controller@getMessage');
 
 Route::get('abouts',function(){
     return view('Viewer.Page.about');
@@ -35,6 +33,9 @@ Route::get('danhsach',function(){
 });
 Route::get('chitiet',function(){
     return view('Viewer.Page.chitiet');
+});
+Route::get('ctblog',function(){
+    return view('Viewer.Page.ctblog');
 });
 Route::get('quanlytin',function(){
     return view('Viewer.Page.quanlytin');
@@ -75,6 +76,8 @@ Route::group(['prefix'=>'admin'],function(){
     }); 
     Route::group(['prefix'=>'report'],function(){
         Route::get('post_report','report_controller@getDanhSach');
+        Route::get('sent_noti/{id}','report_controller@getThongBao');
+        Route::post('sent_noti/{id}','report_controller@postThongBao');
     });
 });
 

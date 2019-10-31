@@ -33,7 +33,7 @@ class phongtro_controller extends Controller
     public function getDangTin(){
         $loaiphongs = categories::all();
          $list_district = districts::all();
-        return view('Viewer.Page.dangtin',['list_district'=>$list_district,'loaiphongs'=>$loaiphongs]);
+        return view('Viewer.Page.dangtin',['list_ditricst'=>$list_district,'loaiphongs'=>$loaiphongs]);
 
     }
     public function postDangTin(Request $request){
@@ -52,7 +52,7 @@ class phongtro_controller extends Controller
        return redirect('dangtin/')->with('thongbao','Đăng Thành Công');
     }
     public function getIndex(Request $request){
-        $phongtro = motelrooms::where('id','<',6) ->get();
+        $phongtro = motelrooms::where('id','<',10) ->get();
         $districts = districts::all();
         $loaiphongs = categories::all();
         return view('Viewer.Page.trangchu',['list_district'=>$districts,'loaiphongs'=>$loaiphongs,'phongtros'=>$phongtro]);

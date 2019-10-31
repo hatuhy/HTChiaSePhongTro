@@ -30,6 +30,9 @@
                   <div class="col">
                     <div class="block margin-bottom-sm">
                       <div class="title"><strong>Danh sách Phòng Trọ Chưa Kiểm Duyệt</strong></div>
+                      <button class="btn btn-success categoryButton Sua">
+                        <i class="fas fa-check-double"></i>
+                       </button>
                      <!--  <a class="btn btn-info" data-toggle="modal" data-target="#">Thêm mới</a> -->
                       <div class="table-responsive"> 
                       
@@ -70,7 +73,9 @@
                         @endif
                         <form action="admin/phongtrochuakiemduyet/kiemduyet/{{$ptckd->id}}" method="get">
                         @CSRF
-                                  <button class="btn btn-success categoryButton Sua"><a href="admin/phongtrochuakiemduyet/kiemduyet/{{$ptckd->id}}">Accept</a> </button>
+                                  <button class="btn btn-success categoryButton Sua"><a href="admin/phongtrochuakiemduyet/kiemduyet/{{$ptckd->id}}">
+                                  <i class="fas fa-check"></i>
+                                  </a> </button>
                               </form>
                               </td>
                               </tr>

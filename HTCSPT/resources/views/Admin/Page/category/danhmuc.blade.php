@@ -51,9 +51,13 @@
                                 <td>{{$dm->id}}</td>
                                 <td>{{$dm->id}}</td>
                                 <td>{{$dm->name}}</td>
-                                <td><button class="btn btn-success categoryButton Sua"><a href="admin/danhmuc/suadanhmuc/{{$dm->id}}">Sửa</a></button>
-                               
-                                    <button class="btn btn-success categoryButton Xoa"><a href="admin/danhmuc/xoa/{{$dm->id}}">Xóa</a>  </button> 
+                                <td>
+                                    <button class="btn btn-success categoryButton Sua"><a href="admin/danhmuc/suadanhmuc/{{$dm->id}}">
+                                    <i class="fas fa-edit"></i>
+                                    </a></button>                              
+                                    <button class="btn btn-success categoryButton Xoa"><a href="admin/danhmuc/xoa/{{$dm->id}}">
+                                    <i class="fas fa-trash-alt"></i>
+                                    </a>  </button> 
                                 </td>
                               </tr>
                               @endforeach

@@ -9,7 +9,8 @@
 
     <link rel="stylesheet" href="assets/asset/css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="assets/asset/css/animate.css">
-    
+    <link rel="stylesheet" href="assets_admin/asset/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets_admin/asset/vendor/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="assets/asset/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/asset/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="assets/asset/css/magnific-popup.css">
@@ -25,6 +26,8 @@
     <link rel="stylesheet" href="assets/asset/css/flaticon.css">
     <link rel="stylesheet" href="assets/asset/css/icomoon.css">
     <link rel="stylesheet" href="assets/asset/css/style.css">
+    <link rel="stylesheet" href="assets/asset/css/style.default.css">
+    <link rel="stylesheet" href="assets/asset/css/font.css">
   </head>
   <body>
     @include('Viewer.Layout.header')

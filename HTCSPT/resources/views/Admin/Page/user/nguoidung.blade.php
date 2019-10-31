@@ -35,22 +35,19 @@
                         <table class="table" id="myTable">
                           <thead>
                             <tr>
-                              <th>#</th>
+                              
                               <th>ID</th>
                               <th>Họ và Tên</th>
                               <th>Email</th>
                               <th>Quyền</th>
                               <th>Trạng Thái</th>
                               <th>Action</th>
-                              <th></th>
                             </tr>
                           </thead>
                           <tbody>
 
                               @foreach($nguoidungs as $nd)
                               <tr>
-                              
-                              <td>{{$nd->id}}</td>
                               <td>{{$nd->id}}</td>
                               <td>{{$nd->name}}</td>
                               <td>{{$nd->email}}</td>
@@ -87,10 +84,6 @@
                         </table>
                       </div>
                     </div>
-
-                 
-                    
-                 
                 </div>
               </div>
             </section>

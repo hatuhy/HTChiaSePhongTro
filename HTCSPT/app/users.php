@@ -11,4 +11,7 @@ class users extends Model
     public function motelrooms(){
         return $this->hasMany('App\motelrooms','user_id','id');
     }
-}   
+    public function noti_user(){
+        return $this->hasMany('App\noti_user','id_user','id');
+    }
+}
