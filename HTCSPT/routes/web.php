@@ -23,7 +23,10 @@ Route::get('lienhe',function(){
     return view('Viewer.Page.lienhe');
 });
 
-Route::get('admin','notification_controller@getMessage');
+/* Route::get('admin','notification_controller@getMessage'); */
+Route::get('admin',function(){
+    return view('Admin.Page.index');
+});
 
 Route::get('abouts',function(){
     return view('Viewer.Page.about');

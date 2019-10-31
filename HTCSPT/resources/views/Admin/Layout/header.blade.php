@@ -22,20 +22,21 @@
                 <button class="sidebar-toggle"><i class="fa fa-long-arrow-left"></i></button>
             </div>
             <div class="right-menu list-inline no-margin-bottom">
+            <!-- THông báo của admin -->
                 <!-- <div class="list-inline-item"><a href="#" class="search-open nav-link"><i class="icon-magnifying-glass-browser"></i></a></div> -->
                 <div class="list-inline-item dropdown"><a id="navbarDropdownMenuLink1" href="#" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false" class="nav-link messages-toggle"><i
                             class="icon-email"></i><span class="badge dashbg-1">5</span></a>
                     <div aria-labelledby="navbarDropdownMenuLink1" class="dropdown-menu messages">
-                    @foreach($mess as $thongbao)
+                    
                     <a href="#" class="dropdown-item message d-flex align-items-center">
                             <div class="profile"><img src="assets_admin/asset/img/avatar-5.jpg" alt="..."
                                     class="img-fluid">
                                 <div class="status offline"></div>
                             </div>
-                            <div class="content"> <strong class="d-block">Sara Wood</strong><span class="d-block">{{$thongbao->notification->title}}</span><small class="date d-block">{{$thongbao->created_at}}</small></div>
+                            <div class="content"> <strong class="d-block">Sara Wood</strong><span class="d-block"></span><small class="date d-block"></small></div>
                         </a>
-                        @endforeach
+                       
                         <a href="#" class="dropdown-item text-center message"> <strong>See All Messages <i
                                     class="fa fa-angle-right"></i></strong></a></div>
                 </div>
