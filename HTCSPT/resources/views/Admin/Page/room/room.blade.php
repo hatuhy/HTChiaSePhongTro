@@ -41,7 +41,7 @@
                           <thead>
                             <tr>
                               <!-- <th style="width:7%";><input type="checkbox"/></th> -->
-                              <th style="width:7%">ID</th>
+                              <th style="width:7%">STT  </th>
                               <th style="width:20%">Tiêu Đề</th>
                               <th style="width:8%">Loại Hình </th>
                               <th style="width:10%">Giá </th>
@@ -55,11 +55,18 @@
                             </tr>
                           </thead>
                           <tbody>
+                             <?php
+                                $i=0;
+                              ?>                          
                               @foreach($dspts as $pt)
+                              <?php
+                                $i+=1;
+                              ?>
+                              
                               <tr>  
                               
                               <!-- <td><input type="checkbox"/></td> -->
-                              <td>{{$pt->id}}</td>
+                              <td>{{$i}}</td>
                               <td>{{$pt->title}}</td>
                               <td>{{$pt->categories->name}}</td>
                               <td>{{$pt->price}}</td>
@@ -67,12 +74,12 @@
                               <td>{{$pt->changes}}</td>
                               <td>{{$pt->updated_at}}</td>
                               <td>1</td>
-                              @if($pt->status==0)
+                              @if($pt->status==1)
                               <td style="color:green">
                               <i class="fas fa-check"></i>
                               </td>
                               @endif
-                              @if($pt->status==1)
+                              @if($pt->status==0)
                               <td style="color:yellow">
                               <i class="fas fa-exclamation"></i>
                               </td>

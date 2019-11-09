@@ -10,11 +10,23 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('dangnhap','nguoidung_controller@getDangNhap');
+
+Route::post('dangnhap','nguoidung_controller@postDangNhap');
+
+Route::get('dangxuat','nguoidung_controller@getDangXuat');
 Route::get('index','phongtro_controller@getIndex');
+Route::get('danhsach','phongtro_controller@getDanhSach');
 
+Route::group(['prefix'=>'/','middleware'=>'userLogin'],function(){
+    Route::get('dangtin','phongtro_controller@getDangTin');
+    Route::post('dangtin','phongtro_controller@postDangTin');
+    Route::get('quanlytin','phongtro_controller@getQuanLyTin');
+    Route::get('suatin/{id}','phongtro_controller@getSuaTin')->name('suatin');
+    Route::post('suatin/{id}','phongtro_controller@postSuaTin')->name('suatin');
+    Route::get('xoatin/{id}','phongtro_controller@getXoaTin')->name('xoatin');
+});
 
-Route::get('dangtin','phongtro_controller@getDangTin');
-Route::post('dangtin','phongtro_controller@postDangTin');
 
 Route::get('dsblog',function(){
     return view('Viewer.Page.dsblog');
@@ -23,23 +35,18 @@ Route::get('lienhe',function(){
     return view('Viewer.Page.lienhe');
 });
 
-Route::get('admin','notification_controller@getMessage');
-
 Route::get('abouts',function(){
     return view('Viewer.Page.about');
 });
-Route::get('danhsach',function(){
-    return view('Viewer.Page.danhsach');
-});
-Route::get('chitiet',function(){
+
+/* Route::get('chitiet',function(){
     return view('Viewer.Page.chitiet');
-});
+}); */
+Route::get('s/{id}','phongtro_controller@getChiTiet')->name('chitiet');
 Route::get('ctblog',function(){
     return view('Viewer.Page.ctblog');
 });
-Route::get('quanlytin',function(){
-    return view('Viewer.Page.quanlytin');
-});
+
  Route::get('danhmuc',function(){
      return view('Admin.Page.category.danhmuc');
 });
@@ -48,9 +55,19 @@ Route::get('nguoidung',function(){
 });
 Route::get('timkiem','phongtro_controller@timkiem')->name('tim-kiem');
 
+Route::get('dangki',function(){
+    return view('Viewer.Page.dangki');
+});
 
 
-Route::group(['prefix'=>'admin'],function(){
+Route::post('dangki','nguoidung_controller@postDangki')->name('post-dangki');
+Route::get('phattrien',function(){
+    return view('Admin.Page.phattrien');
+});
+Route::get('admin',function(){
+    return view('Admin.Page.index');
+});
+Route::group(['prefix'=>'admin','middleware'=>'adminLogin'],function(){
     Route::group(['prefix'=>'danhmuc'],function(){
         Route::get('danhsach','danhmuc_controller@getDanhSach');
         Route::get('xoa/{id}','danhmuc_controller@xoaDanhMuc')-> name('xoadanhmuc');
@@ -79,6 +96,8 @@ Route::group(['prefix'=>'admin'],function(){
         Route::get('sent_noti/{id}','report_controller@getThongBao');
         Route::post('sent_noti/{id}','report_controller@postThongBao');
     });
+    Route::get('thongke','phongtro_controller@getThongKe');
+    
 });
 
 

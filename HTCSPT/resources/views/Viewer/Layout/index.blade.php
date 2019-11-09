@@ -9,8 +9,6 @@
 
     <link rel="stylesheet" href="assets/asset/css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="assets/asset/css/animate.css">
-    <link rel="stylesheet" href="assets_admin/asset/vendor/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets_admin/asset/vendor/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="assets/asset/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/asset/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="assets/asset/css/magnific-popup.css">
@@ -21,13 +19,12 @@
 
     <link rel="stylesheet" href="assets/asset/css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="assets/asset/css/jquery.timepicker.css">
-
-    
     <link rel="stylesheet" href="assets/asset/css/flaticon.css">
     <link rel="stylesheet" href="assets/asset/css/icomoon.css">
     <link rel="stylesheet" href="assets/asset/css/style.css">
     <link rel="stylesheet" href="assets/asset/css/style.default.css">
-    <link rel="stylesheet" href="assets/asset/css/font.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   </head>
   <body>
     @include('Viewer.Layout.header')
@@ -57,11 +54,12 @@
   <script src="assets/asset/js/aos.js"></script>
   <script src="assets/asset/js/jquery.animateNumber.min.js"></script>
   <script src="assets/asset/js/bootstrap-datepicker.js"></script>
-  <script src="assets/asset/js/jquery.timepicker.min.js"></script>
+<!--   <script src="assets/asset/js/jquery.timepicker.min.js"></script> -->
   <script src="assets/asset/js/scrollax.min.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="assets/asset/js/google-map.js"></script>
   <script src="assets/asset/js/main.js"></script>
+  <script src="assets/asset/js/index.js"></script>
     
   </body>
 </html>

@@ -46,9 +46,17 @@
                             </tr>
                           </thead>
                           <tbody>
+                              <?php
+                                $i=0;
+                              ?>                          
                               @foreach($danhmucs as $dm)
+                              <?php
+                                $i+=1;
+                              ?>
+                              
+                              
                               <tr>
-                                <td>{{$dm->id}}</td>
+                                <td>{{$i}}</td>
                                 <td>{{$dm->id}}</td>
                                 <td>{{$dm->name}}</td>
                                 <td>

@@ -31,6 +31,14 @@
 					<input type="text" class="form-text form-control" name="TieuDe" placeholder="Nhập tiêu đề tin đăng">
 				</div>
 				<div class="form-group">
+				<label for="titles">Thể loại (Tìm phòng, Cho thuê...)</label>
+				<select name="HinhThuc" class="custom-select">
+						
+                          <option value="0">Cho Thuê</option>
+						  <option value="1">Tìm Phòng</option>
+						  <option value="2">Ở Ghép</option>
+
+				</select>
 				<label for="titles">Kiểu Nhà (Nhà Trọ, Căn Hộ...)</label>
 				<select name="KieuNha" class="custom-select">
 						
@@ -56,8 +64,7 @@
 				<div class="form-group">
 				<label for="img">Vui lòng chọn hình tin đăng rõ ràng, nên tải lên 3 đến 4 hình.
 				</label>
-				<input type="file" class="form-control-file mb-3" id="img" name="Anh">
-				
+				<input type="file" class="form-control-file mb-3" id="img" name="Anh">				
 				</div>
 				<div class="form-group">
 				<label for="hoten">Tên Liên Hệ</label>

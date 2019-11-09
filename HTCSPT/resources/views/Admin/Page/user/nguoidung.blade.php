@@ -35,8 +35,8 @@
                         <table class="table" id="myTable">
                           <thead>
                             <tr>
-                              
-                              <th>ID</th>
+                            
+                              <th>STT</th>
                               <th>Họ và Tên</th>
                               <th>Email</th>
                               <th>Quyền</th>
@@ -45,10 +45,16 @@
                             </tr>
                           </thead>
                           <tbody>
-
+                          <?php
+                                $i=0;
+                              ?>                          
                               @foreach($nguoidungs as $nd)
+                              <?php
+                                $i+=1;
+                              ?>
+                              
                               <tr>
-                              <td>{{$nd->id}}</td>
+                              <td>{{$i}}</td>
                               <td>{{$nd->name}}</td>
                               <td>{{$nd->email}}</td>
                               @if($nd->right==1)
@@ -62,12 +68,12 @@
                                </td>
                                @endif
                               
-                             @if($nd->tinhtrang==1)
+                             @if($nd->status==1)
                               <td style="color:yellow">
                                 Đang hoạt động
                               </td> 
                               @else
-                                @if($nd->tinhtrang==0)
+                                @if($nd->status==0)
                                 <td style="color:Red">
                                 Đã Khóa
                               </td> 
