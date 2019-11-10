@@ -268,7 +268,7 @@
                             @foreach($dschungcu as $chungcu)
                             <div class="col-md-4 ftco-animate">
                                 <div class="properties">
-                                    <a href="chitiet" class="img img-2 d-flex justify-content-center align-items-center"
+                                    <a href="{{route('chitiet',$phongtro->id)}}" class="img img-2 d-flex justify-content-center align-items-center"
                                         style="background-image: url(assets/asset/images/{{$chungcu->images}});">
                                         <div class="icon d-flex justify-content-center align-items-center">
                                             <span class="icon-search2"></span>
@@ -332,7 +332,7 @@
                             @foreach($dsnhanc as $nhanc)
                             <div class="col-md-4 ftco-animate">
                                 <div class="properties">
-                                    <a href="chitiet" class="img img-2 d-flex justify-content-center align-items-center"
+                                    <a href="{{route('chitiet',$phongtro->id)}}" class="img img-2 d-flex justify-content-center align-items-center"
                                         style="background-image: url(assets/asset/images/{{$nhanc->images}});">
                                         <div class="icon d-flex justify-content-center align-items-center">
                                             <span class="icon-search2"></span>
@@ -396,7 +396,7 @@
                             @foreach($dsktx as $ktx)
                             <div class="col-md-4 ftco-animate">
                                 <div class="properties">
-                                    <a href="chitiet" class="img img-2 d-flex justify-content-center align-items-center"
+                                    <a href="{{route('chitiet',$phongtro->id)}}" class="img img-2 d-flex justify-content-center align-items-center"
                                         style="background-image: url(assets/asset/images/{{$ktx->images}});">
                                         <div class="icon d-flex justify-content-center align-items-center">
                                             <span class="icon-search2"></span>
@@ -460,7 +460,7 @@
                             @foreach($dshomestay as $homestay)
                             <div class="col-md-4 ftco-animate">
                                 <div class="properties">
-                                    <a href="chitiet" class="img img-2 d-flex justify-content-center align-items-center"
+                                    <a href="{{route('chitiet',$phongtro->id)}}" class="img img-2 d-flex justify-content-center align-items-center"
                                         style="background-image: url(assets/asset/images/{{$homestay->images}});">
                                         <div class="icon d-flex justify-content-center align-items-center">
                                             <span class="icon-search2"></span>

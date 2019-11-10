@@ -101,8 +101,8 @@ class phongtro_controller extends Controller
       return redirect('quanlytin')->with('thongbao','Sửa thành công');
     }
     public function getIndex(Request $request){
-        $phongtro = motelrooms::orderBy('id','DESC')->where('id','<',20) ->paginate(8,['*'], 'page1');;
-        $phongtroBTL = motelrooms::orderBy('id','DESC')->where('district_id',14) ->paginate(8,['*'], 'page2');;
+        $phongtro = motelrooms::orderBy('id','DESC')->where('approve',1) ->paginate(8,['*'], 'page1');;
+        $phongtroBTL = motelrooms::orderBy('id','DESC')->where('district_id',14)->where('approve',1) ->paginate(8,['*'], 'page2');;
         $districts = districts::all();
         $loaiphongs = categories::all();
         return view('Viewer.Page.trangchu',['list_district'=>$districts,'phongtroBTL'=>$phongtroBTL,'loaiphongs'=>$loaiphongs,'phongtros'=>$phongtro]);
@@ -111,11 +111,11 @@ class phongtro_controller extends Controller
     public function getDanhSach(Request $request){
         $districts = districts::all();
         $loaiphongs = categories::all();
-        $dschungcu = motelrooms::orderBy('id','DESC')->where('category_id','=',2)->get();
-        $dsphongtro = motelrooms::orderBy('id','DESC')->where('category_id','=',1)->get();
-        $dsnhanc = motelrooms::orderBy('id','DESC')->where('category_id','=',3)->get();
-        $dsktx = motelrooms::orderBy('id','DESC')->where('category_id','=',4)->get();
-        $dshomestay = motelrooms::orderBy('id','DESC')->where('category_id','=',5)->get();
+        $dschungcu = motelrooms::orderBy('id','DESC')->where('category_id','=',2)->where('approve',1)->get();
+        $dsphongtro = motelrooms::orderBy('id','DESC')->where('category_id','=',1)->where('approve',1)->get();
+        $dsnhanc = motelrooms::orderBy('id','DESC')->where('category_id','=',3)->where('approve',1)->get();
+        $dsktx = motelrooms::orderBy('id','DESC')->where('category_id','=',4)->where('approve',1)->get();
+        $dshomestay = motelrooms::orderBy('id','DESC')->where('category_id','=',5)->where('approve',1)->get();
         return view('Viewer.Page.danhsach',['list_district'=>$districts,'loaiphongs'=>$loaiphongs,
         'dschungcu'=>$dschungcu,'dsphongtro'=>$dsphongtro,'dsnhanc'=>$dsnhanc,
         'dsktx'=>$dsktx,'dshomestay'=>$dshomestay]);
@@ -123,7 +123,7 @@ class phongtro_controller extends Controller
 
     public function getDanhSachPT(Request $request){
         $loaiphongs = categories::all();
-        $pt = motelrooms::orderBy('id','DESC')->where('$phongtro->categories->name','=','Phòng trọ');
+        $pt = motelrooms::orderBy('id','DESC')->where('$phongtro->categories->name','=','Phòng trọ')->where('approve',1);
         return view('Viewer.Page.danhsach',['pt'=>$pt]);
     }
 
@@ -140,7 +140,7 @@ class phongtro_controller extends Controller
 
     public function getChiTiet(Request $request){
         $pt = motelrooms::where('id',$request->id)->first();
-        $phongtroBTL = motelrooms::orderBy('id','DESC')->where('district_id',14)->take(2)->get();
+        $phongtroBTL = motelrooms::orderBy('id','DESC')->where('district_id',14)->where('approve',1)->take(2)->get();
         return view('Viewer.Page.chitiet',compact('pt','phongtroBTL'));
     }
     public function getThongKe(){

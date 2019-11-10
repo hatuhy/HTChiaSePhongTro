@@ -84,7 +84,7 @@ class nguoidung_controller extends Controller
     public function postChangeUser(Request $request,$id){
         $nguoidung = users::find($id);
         $nguoidung->right = $request ->Quyen;
-        $nguoidung->tinhtrang =$request->TinhTrang;
+        $nguoidung->status =$request->TinhTrang;
         $nguoidung->save();
         return redirect('admin/nguoidung/change_user/'.$id)->with('thongbao','Sửa Thành Công');
     }

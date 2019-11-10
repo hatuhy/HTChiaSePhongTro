@@ -49,10 +49,10 @@
                                 </select>
                             </div>
                             <div class="form-group">
-                                <label>Quyền</label>
+                                <label>Trạng Thái</label>
                                 <select class="form-control"  name="TinhTrang">
-                                    <option  <?php if ($nguoidungs->tinhtrang == 1 ) echo 'selected' ; ?> value="1">Còn hoạt động</option>
-                                    <option  <?php if ($nguoidungs->tinhtrang == 0 ) echo 'selected' ; ?> value="0">Đã Khóa</option>
+                                    <option  <?php if ($nguoidungs->status == 1 ) echo 'selected' ; ?> value="1">Còn hoạt động</option>
+                                    <option  <?php if ($nguoidungs->status == 0 ) echo 'selected' ; ?> value="0">Đã Khóa</option>
                                 </select>
                             </div>
                             
